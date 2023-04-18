@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="flex.css" />
+  </head>
+  <style>
+    div, footer {
+        background-color: gray;
+        border: 1px solid red;
+    }
+    .parent {
+        display: flex;
+    }
+    .container {
+        flex-basis: 50%;
+    }
+    .article-parent {
+        display: flex;
+    }
+    .article {
+        flex-basis: 100%;
+    }
+    .header, .article {
+        height: 100px;
+    }
+    .aside {
+        flex-basis: 50%;
+        border: none;
+    }
+    .menu {
+        height: 100%;
+    }
+    .footer-content {
+        height: 50px;
+    }
+  </style>
+  <body>
+    <main>
+      <div class="parent">
+        <div class="container">
+          <div class="item header">Header</div>
+
+          <div class="article-parent">
+            <div class="item article">Article</div>
+            <div class="item article">Article</div>
+          </div>
+        </div>
+
+        <div class="aside">
+          <div class="item menu">Menu</div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="item footer-content">Footer</div>
+      </footer>
+    </main>
+  </body>
+</html>
