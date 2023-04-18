@@ -1,0 +1,38 @@
+.parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.article-parent {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.container {
+    flex-basis: 600px;
+}
+.header {
+    background: gray;
+    height: 200px;
+    border: 1px solid black;
+}
+.article {
+    background: green;
+    height: 200px;
+    width: 298px;
+    border: 1px solid black;
+}
+.menu {
+    background: lightblue;
+    height: 400px;
+    width: 600px;
+    border: 1px solid black;
+}
+.footer-content {
+    background: pink;
+    height: 100px;
+    width: 1200px;
+    border: 1px solid black
+}
