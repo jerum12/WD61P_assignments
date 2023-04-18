@@ -1,0 +1,37 @@
+.parent{
+    display: flex;
+}
+.container{
+    
+}
+.parent-header{
+    width: 300px;
+    height: 150px;
+    background-color: aqua;
+}
+.parent-article{
+    display: flex;
+}
+.item-article1{
+    width: 150px;
+    height: 200px;
+    background-color:brown;
+}
+.item-article2{
+    width: 150px;
+    height: 200px;
+    background-color:orangered;
+}
+.aside{
+
+}
+.item-menu{
+    width: 300px;
+    height: 350px;
+    background-color: violet;
+}
+.item-footer-content{
+    width: 600px;
+    height: 100px;
+    background-color: red;
+}
