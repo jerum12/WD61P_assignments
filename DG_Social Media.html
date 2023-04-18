@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Social Media Table</title>
+	<link rel="stylesheet" type="text/css" href="Social Media.css">
+	<style>
+		/* Style the table */
+		table {
+			border-collapse: collapse;
+        
+		}
+		
+		/* Style the cells */
+		td {
+        border-style: double;
+        border-width: 2px;
+        padding: 5px;
+        text-align: center;
+      }
+		
+		/* Style the table caption */
+		caption {
+			font-size: 1.2em;
+			font-weight: italic;
+			margin-bottom: 10px;
+		}
+        /* Center the cells */
+        table, th, td {
+        border: 2px solid black;
+        padding: 10px;
+        text-align: center; /* Center text in cells */
+      }
+	</style>
+</head>
+<body>
+	<!--- Table Head -->
+	<table class="border">
+		<caption><em>Social Media Table</em></caption>
+		<thead>
+			<tr>
+				<td><strong>Name<strong></td>
+				<td><strong>Description<strong></td>
+			</tr>
+		</thead>
+		<!--- Table Body -->
+		<tbody>       
+			<td>Facebook Link</td>
+			<td><a href="www.facebook.com">Facebook</a></td>
+		</tbody>
+		<tbody>       
+			<td>Instagram Link</td>
+			<td><a href="www.instagram.com">Instagram</a></td>
+		</tbody>
+		<tbody>       
+			<td>Tiktok Link</td>
+			<td><a href="www.Tiktok.com">Instagram</a></td>
+		</tbody>
+		<!--- Table Footer -->
+		<tfoot>
+			<tr>
+				<td colspan="3"><strong>Total Records: 3</strong></td>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>
