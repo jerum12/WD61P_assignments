@@ -1,0 +1,43 @@
+.parent {
+    display: flex;
+    border: 3px solid red;
+    height: 100%;
+
+}
+.container > div {
+    border: 1px solid blue;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background: gray;
+    margin: 0 !important;
+}
+.container{
+    width: 50%;
+}
+.aside{
+    width: 50%;
+    border: 3px solid yellow;
+}
+main{
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.article-parent{
+    display: flex; 
+    height: 50%;
+}
+.article-parent > .item,.article{
+    width: 50%;
+    border: 3px solid white !important;
+}
+.header{
+    height: 50%;
+}
+.footer-content{
+    padding-bottom: 150px;
+    border: 3px solid white;
+}
