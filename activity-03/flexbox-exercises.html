@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="flex.css" />
+
+    <style>
+
+      main {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background-color: red;
+      }
+
+      .parent {
+        display: flex;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+      }
+
+      div.item.header {
+        background-color: lightblue;    
+        height: 200px;    
+      }
+
+      .article-parent {
+        display: flex;
+        flex-direction: row;
+        height: 200px;
+      }
+
+      .article-parent div:nth-child(1) {
+        background-color: lightgreen;
+        flex-grow: 1;
+      }
+
+      .article-parent div:nth-child(2) {
+        background-color: lightsalmon;
+        flex-grow: 1;
+      }
+
+      .aside {
+        background-color: lightpink;
+        flex-grow: 1;
+      }
+
+      div.item.footer-content {
+        background-color: lightslategray;
+        height: 50px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="parent">
+        <div class="container">
+          <div class="item header">Header</div>
+
+          <div class="article-parent">
+            <div class="item article">Article</div>
+            <div class="item article">Article</div>
+          </div>
+        </div>
+
+        <div class="aside">
+          <div class="item menu">Menu</div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="item footer-content">Footer</div>
+      </footer>
+    </main>
+  </body>
+</html>
