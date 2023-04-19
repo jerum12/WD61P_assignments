@@ -1,0 +1,41 @@
+.parent{
+  display: flex;
+}
+
+.container{
+  flex-wrap: wrap;
+}
+
+.header{
+  width: 400px;
+  height: 100px;
+  background-color: green;
+}
+
+.article {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  width: 400px;
+}
+
+.item1 {
+  background-color: yellow;
+  width: 200px;
+}
+
+.item2 {
+  background-color: blue;
+  width: 200px;
+}
+
+.aside{
+  background-color: orange;
+  width: 400px;
+}
+
+.footer{
+  background-color: red;
+  width: 800px;
+  height: 100px;
+}
