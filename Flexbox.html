@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        border: 0.1px solid black;
+      }
+      .Maincontainer {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .Topcontainer {
+        width: 100%;
+        height: 700px;
+        background-color: #193882;
+      }
+
+      .Botcontainer {
+        width: 100%;
+        height: 100px;
+        background-color: #102446;
+      }
+
+      .Topcontainer {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .Left {
+        width: 50%;
+        background-color: #2c4ea3;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .Right {
+        width: 50%;
+        background-color: #0e6ea9;
+      }
+
+      .Topleft {
+        width: 100%;
+        height: 50%;
+        background-color: #328ca9;
+      }
+
+      .Botleft {
+        width: 100%;
+        height: 50%;
+        background-color: chartreuse;
+        display: flex;
+      }
+
+      .Botleftarticle {
+        width: 50%;
+        background-color: #2c4ea3;
+      }
+
+      .Botrightarticle {
+        width: 50%;
+        background-color: rgb(69, 89, 241);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="Maincontainer">
+      <div class="Topcontainer">
+        <div class="Left">
+          <div class="Topleft">Header</div>
+          <div class="Botleft">
+            <div class="Botleftarticle">Article</div>
+            <div class="Botrightarticle">Article</div>
+          </div>
+        </div>
+        <div class="Right">Menu</div>
+      </div>
+
+      <div class="Botcontainer">Footer</div>
+    </div>
+  </body>
+</html>
