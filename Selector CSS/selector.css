@@ -1,0 +1,55 @@
+body {
+    background: #bdc3c7;
+}
+
+h1 {color:#9b59b6;
+}
+
+h2 {
+    color: orange;
+}
+
+li {
+    color:rgb(30, 15, 243)
+}
+
+p {
+    background: yellow;
+}
+
+.hello {
+    background: white;
+}
+
+#special {
+    border: 2px solid rgb(26, 26, 158);
+}
+
+input {
+    background: gray;
+    border: 3px solid red;
+}
+
+/*Make the <h1> element's color change to blue when hovered over */
+h1:hover {
+    color: blue;
+}
+
+.fl-color{
+    color: green;
+    font-size: 100px;
+}
+
+a {
+    color: gray;
+}
+
+.third-div p {
+    background: pink;
+}
+
+/* Make the <em> in the 3rd <div> element white and 20px font(font-size:20px)*/
+em {
+    color: white;
+    font-size: 20px;
+}
