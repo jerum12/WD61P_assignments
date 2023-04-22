@@ -1,0 +1,51 @@
+.container {
+    /* background-color: #003049;
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 5px solid #003049; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Headerdiv {
+    background-color: violet;
+    height: 100px;
+    width: 400px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.menudiv {
+    background-color: yellowgreen;
+    height: 200px;
+    width: 200px;
+}
+
+.Articlediv {
+    display: flex;
+    flex-direction: row;
+}
+
+.art1 {
+    background-color: rgb(32, 66, 128);
+    height: 100px;
+    width: 200px;
+}
+
+.art2 {
+    background-color: rgb(173, 26, 31);
+    height: 100px;
+    width: 200px;
+}
+
+footer {
+    background-color: royalblue;
+    height: 100px;
+    width: 200px;
+}
+
+.headerMenu {
+    display: flex;
+    flex-direction: column;
+}
