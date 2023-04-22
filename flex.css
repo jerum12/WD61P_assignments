@@ -1,0 +1,66 @@
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.parent {
+    display: flex;
+    flex-grow: 1;
+}
+
+.header {
+    flex-basis: 20%;
+    background-color: bisque;
+}
+
+.article {
+    flex-basis: 100%;
+    background-color: aquamarine;
+    height: 20%;
+}
+
+.article-parent {
+    display: flex;
+    flex-grow: 1;
+}
+
+.aside{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.menu {
+    flex-grow: 1;
+    background-color: orange;
+}
+
+.item {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 20px;
+    border: solid;
+}
+
+.footer, .footer-content {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 20px;
+    background-color: grey;;
+    border: solid
+  }
+
+
+  .footer-content {
+    flex-grow: 1;
+  }
