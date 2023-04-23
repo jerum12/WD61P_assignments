@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      #img {
+        width: 20%;
+        height: 20%;
+      }
+    </style>
+    <title>Bootstrap 5 Exercise</title>
+  </head>
+  <body class="container-fluid">
+    <div>
+      <h1 class="pb-2 mt-4 mb-5 border-bottom">Bootstrap 5 Activity</h1>
+    </div>
+    <div class="mb-5 pb-5 border-bottom">
+      <h2>Headings</h2>
+      <h1>My Heading</h1>
+      <p class="lead">This is a lead paragraph</p>
+      <h3>
+        Fancy Display Heading
+        <small class="text-body-secondary">With faded secondary text</small>
+      </h3>
+      <p class="text-uppercase">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
+        impedit laboriosam explicabo. Veritatis temporibus repudiandae error
+        voluptatum voluptatibus sit dolorem illum porro culpa blanditiis iste
+        natus quisquam possimus magnam tenetur ipsum sapiente laudantium,
+        debitis cum! Voluptatibus assumenda libero quos ipsa nesciunt vero.
+        Voluptate mollitia commodi accusantium, at voluptates in sint?
+      </p>
+    </div>
+    <div>
+      <h1>Inline Text and Text Utilities</h1>
+    </div>
+    <div>
+      <p>
+        This is <mark>highlighted</mark> text. This is <del>deleted</del> text.
+        This is <u>underlined</u> text. This is <strong>bold</strong> text. This
+        is <em>italic</em> text. This is <small>small</small> text. This is
+        <code>code</code> text. This is <kbd>keyboard</kbd> text. This is
+        <samp>sample output</samp> text. This is <var>variable</var> text.
+      </p>
+    </div>
+    <div class="pb-5 mb-5 border-bottom">
+      <p class="text-primary">This is primary text</p>
+      <p class="text-secondary">This is secondary text</p>
+      <p class="text-success">This is success text</p>
+      <p class="text-danger">This is danger text</p>
+      <p class="text-warning">This is warning text</p>
+      <p class="text-info">This is info text</p>
+      <p class="text-light bg-dark">This is light text on dark background</p>
+      <p class="text-dark">This is dark text</p>
+      <p class="text-muted">This is muted text</p>
+    </div>
+    <div class="mt-2 pt-2 mb-5 pb-5 border-bottom">
+      <h1>Abbreviation</h1>
+      <p>The <abbr title="WHO">WHO </abbr>was founded in 1948.</p>
+      <p>
+        The <abbr title="HTML" class="initialism">HTML</abbr> is a markup
+        language used to create web pages
+      </p>
+    </div>
+    <div class="mt-2 pt-2 mb-5 pb-5 border-bottom">
+      <div class="clearfix mb-3 mt-3 pt-4 pb-4">
+        <figure class="figure d-inline">
+          <img
+            id="img"
+            src="images/Sample-01.png"
+            alt="Sample-01"
+            class="float-start"
+          />
+        </figure>
+        <figure class="figure d-inline">
+          <img
+            src="images/Sample-01.png"
+            alt="Sample-01"
+            id="img"
+            class="float-end"
+          />
+          <figcaption class="figure-caption text-end">My Sample</figcaption>
+        </figure>
+      </div>
+      <div>
+        <h1>Blockquotes</h1>
+        <figure class="text-center">
+          <blockquote class="blockquote">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Laudantium, inventore! Tenetur, a quia.
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            Someone famouse in <cite title="Source">Source Title</cite>
+          </figcaption>
+        </figure>
+        <h1>List Unstyled</h1>
+        <ul class="list-unstyled">
+          <li><a href="google.com">Google</a></li>
+          <li><a href="GitHub.com">GitHub</a></li>
+          <li><a href="Linkedin.com">LinkedIn</a></li>
+        </ul>
+        <h1>List Inline</h1>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="google.com">Google</a></li>
+          <li class="list-inline-item"><a href="GitHub.com">GitHub</a></li>
+          <li class="list-inline-item"><a href="Linkedin.com">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="mt-2 pt-2 mb-5 pb-5 border-bottom">
+      <h1>Description List</h1>
+      <dl class="row">
+        <dt class="col-sm-3">Description lists</dt>
+        <dd class="col-sm-9">
+          A description list is perfect for defining terms.
+        </dd>
+        <dt class="col-sm-3">Nesting</dt>
+        <dd class="col-sm-9">
+          <dl class="row">
+            <dt class="col-sm-4">Nested definition list</dt>
+            <dd class="col-sm-8">
+              I heard you like definition lists. Let me put a definition list
+              inside your definition list.
+            </dd>
+          </dl>
+        </dd>
+      </dl>
+    </div>
+    <div class="mt-2 pt-2 pb-5 mb-5 border-bottom">
+      <h1>Product Table</h1>
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">Product</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">
+                <img
+                  src="images/Sample-01.png"
+                  alt="Sample-01"
+                  class="img-fluid"
+                  style="max-width: 10%"
+                />1
+              </th>
+              <th>9.99</th>
+              <th>10</th>
+            </tr>
+            <tr>
+              <th scope="row">
+                <img
+                  src="images/Sample-01.png"
+                  alt="Sample-01"
+                  class="img-fluid"
+                  style="max-width: 10%"
+                />1
+              </th>
+              <th>9.99</th>
+              <th>10</th>
+            </tr>
+            <tr>
+              <th scope="row">
+                <img
+                  src="images/Sample-01.png"
+                  alt="Sample-01"
+                  class="img-fluid"
+                  style="max-width: 10%"
+                />1
+              </th>
+              <th>9.99</th>
+              <th>10</th>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
