@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>JPA Form</title>
+    <style>
+        fieldset{
+            background: linear-gradient(to left,  #Cb6Ce6, #004aad)
+        }
+        body { color: whitesmoke;
+        }
+        input[type="checkbox"], input[type="radio"] {
+      accent-color: rgb(194, 91, 241);
+    }
+    </style>
+</head>
+<body>
+	<form>
+		<fieldset class="form-group">
+			<legend style="text-align: center; font-size: 2em;"><h1 style="background: linear-gradient(to bottom, #010622, #d477b2); -webkit-background-clip: text; -webkit-text-fill-color: transparent; -webkit-text-stroke: .5px rgb(252, 252, 252); color: black;"><b>Form</b></h1></legend>
+			<label for="Sign-in"><b>Username:</b></label>
+			<input type="text" class="username" id="username" placeholder="Enter username or email" required>
+			<br>
+			<label for="password"><b>Password:</b></label>
+			<input type="password" id="password" name="password" placeholder="Enter your password" required>
+			<br>
+			<article class="Gender">
+            <label for="availability"><b>Gender:</b></label>
+				<input type="radio" id="Male" name="Gender" value="male">
+				<label for="Male">Male</label>
+				<input type="radio" id="Female" name="Gender" value="female">
+				<label for="Female">Female</label>
+				<input type="radio" id="Other" name="Gender" value="other">
+				<label for="Other">Other</label>
+			</article>
+		
+		<br>
+		<Article class="availability">
+			<label for="availability"><b>Availability:</b></label>
+			<br>
+				<input type="checkbox" id="Monday" name="Monday" value="Monday">
+				<label for="Monday">Monday</label>
+				<br>
+				<input type="checkbox" id="Tuesday" name="Tuesday" value="Tuesday">
+				<label for="Tuesday">Tuesday</label>
+				<br>
+				<input type="checkbox" id="Wednesday" name="Wednesday" value="Wednesday">
+				<label for="Wednesday">Wednesday</label>
+				<br>
+				<input type="checkbox" id="Thursday" name="Thursday" value="Thursday">
+				<label for="Thursday">Thursday</label>
+				<br>
+				<input type="checkbox" id="Friday" name="Friday" value="Friday">
+				<label for="Friday">Friday</label>
+				<br>
+				<input type="checkbox" id="Saturday" name="Saturday" value="Saturday">
+				<label for="Saturday">Saturday</label>
+				<br>
+				<input type="checkbox" id="Sunday" name="Sunday" value="Sunday">
+				<label for="Sunday">Sunday</label>
+				<br>
+				<button type="submit" style="background-color: #ffd323; color: #372800"><b>Submit</b></button>
+		</Article>
+    </fieldset>
+	</form>
+</body>
+</html>
