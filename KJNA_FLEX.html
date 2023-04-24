@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .parentclass{
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        .body{
+            display: flex;
+            height: 90%;
+        }
+
+        .left{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header{
+            display: flex;
+            background: pink;
+            height: 50%;
+        }
+
+        .article{
+            display: flex; 
+            height: 50%;     
+        }
+
+        .article1{
+            width: 50%;
+            background: rgb(133, 133, 235);
+        }
+
+        .article2{
+            width: 50%;
+            background: rgb(148, 248, 148);
+        }
+
+        .right{
+            background: rgb(240, 144, 240);
+            width: 50%;
+    
+        }
+        .foot{
+            background: rgb(255, 255, 193);
+            height: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="parentclass">
+        
+        <div class="body">
+            <div class="left">
+                <div class="header">Header</div>
+                <div class="article">
+                    <div class="article1">Article</div>
+                    <div class="article2">Article</div>
+                </div>
+            </div>
+            
+            <div class="right">Menu</div>
+        </div>
+
+        <div class="foot">Footer</div>
+    </div>
+</body>
+</html>
