@@ -1,0 +1,54 @@
+.parent{
+    display:flex;
+       
+}
+
+
+.parent-header{
+    width:402px;
+    height:200px;
+    background: gray;
+    border:1px solid orange
+    
+}
+.parent-article{
+    display:flex;   
+}
+
+.item-article1{
+    width:200px;
+    height:200px;
+    background: gray;
+    border: 1px solid orange
+}
+   
+.item-article2{
+    width:200px;
+    height:200px;
+    background: gray;
+    border: 1px solid orange
+}
+
+
+.item-menu{
+    width:401px;
+    height:402px;
+    background: gray;
+    border:1px solid orange
+
+}
+.item-footer-content{
+    width:805px;
+    height:100px;
+    background: gray;
+    border: 1px solid orange;
+
+}
+
+
+
+
+
+
+
+
