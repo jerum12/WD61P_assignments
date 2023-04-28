@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <title>Bootstrap 5 Activity</title>
+    <style>
+        .prod1pic{
+            width: 40px;
+            height: 60px;
+        }
+    </style>
+
+</head>
+<body class="ms-5 mt-5 me-5 mb-5">
+    <div class="row">
+        <div>
+            <p class="h2">Headings</p>
+            <p class="h1">My Heading</p>
+            <p class="lead">This is a lead paragraph</p>
+        </div>
+         <div>
+            <h3>
+                Fancy Display
+                <small class="text-body-secondary">with faded secondary text</small>
+            </h3>
+            <p class="text-uppercase">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ipsam, in illo id saepe nesciunt voluptatem non esse praesentium porro reiciendis quisquam voluptatibus tenetur facere, ipsum atque recusandae aliquam magni nostrum voluptas distinctio ab itaque? Nemo hic impedit vel rem, provident nesciunt at omnis minima et praesentium ratione accusantium repellat eos nobis repudiandae sit quia iure consectetur molestiae nisi porro ut. Magni, vero esse. Quos, aliquid? Autem aliquam, minima voluptatibus saepe voluptatem ratione, sint sapiente nesciunt in perspiciatis culpa inventore.</p>
+            <p class="border-bottom pb-5"></p>
+          </div>
+         <div class="mt-5">
+                <p class="h2 fs-1 fw-medium">Inline Text and Text Utilites</p>
+                <p>This is <mark>highlighted</mark> text. 
+                    This is <del>deleted</del> text. This is <u>underlined</u> text. This is <strong>bold</strong> text. 
+                    This is <i>italic</i>text. This is <small>small</small> text. This is <code>code</code> text. 
+                    This is <kbd>keyboard</kbd> text. This is <samp>sample output</samp> text. This is <var>variable</var> text.</p>
+                <p class="text-primary">This is primary text.</p>
+                <p class="text-secondary">This is secondary text.</p>
+                <p class="text-success">This is success text.</p>
+                <p class="text-danger">This is danger text.</p>
+                <p class="text-warning">This is warning text.</p>
+                <p class="text-info">This is info text.</p>
+                <p class="text-light bg-dark">This is light text on dark background.</p>
+                <p class="text-dark">This is dark text.</p>
+                <p class="text-muted">This is muted text.</p>
+                <p class="border-bottom pb-5"></p>
+         </div>
+         <div class="mt-5">
+            <p class="h2 fs-1 fw-medium">Abbreviations</p>
+            <p>The <abbr title="attribute">WHO</abbr> was founded in 1948.</p>
+            <p>The <abbr title="HyperText Markup Language" class="initialism">HTML</abbr> is a markup language used to create web pages.</p>
+            <p class="border-bottom pb-5"></p>
+         </div>
+         <div class="mt-5">
+            <p class="h2 fs-1 fw-medium">Images and Figures</p>
+            <div class="row mb-5">
+                <div class="d-flex col-12">
+                    <div class="col-6">
+                        <img src="/Bootstrap_exercise/imgs/Chōdenji_Machine_Voltes_V.jpg" alt="V5">
+                    </div>
+                    <div class="col-6">
+                        <img src="/Bootstrap_exercise/imgs/Chōdenji_Machine_Voltes_V.jpg" alt="V5">
+                        <figcaption>A random image from Lorem Picsum</figcaption>
+                    </div>
+                </div>
+
+            </div>
+         </div>
+         <div class="mt-5">
+            <p class="h2 fs-1 fw-medium">Blockqoutes</p>
+            <figure class="text-center">
+                <blockquote class="blockquote">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda, delectus.</p>
+                </blockquote>
+                <figcaption class="fs-5 blockquote-footer">
+                  Someone famous in <cite title="Source Title">Source Title</cite>
+                </figcaption>
+              </figure>
+         </div>
+         <div>
+            <p class="h2 fs-1 fw-medium">List Unstyled</p>
+            <ul class="list-unstyled text-primary">
+                <u>
+                    <li>Google</li>
+                    <li>GitHub</li>
+                    <li>LinkedIn</li>
+                </u>
+            </ul>
+         </div>
+         <div>
+            <p class="h2 fs-1 fw-medium">List Inline</p>
+            <ul class="list-inline text-primary style{.list-inline-item}">
+                    <li class="list-inline-item"><u>Google</u></li>
+                    <li class="list-inline-item"><u>GitHub</u></li>
+                    <li class="list-inline-item"><u>LinkedIn</u></li>
+            </ul>
+         </div>
+         <div>
+            <p class="h2 fs-1 fw-medium">Description List</p>
+            <dl class="row">
+                <dt class="col-sm-3">Description lists</dt>
+                <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+                
+                <dt class="col-sm-3">Nesting</dt>
+                    <dd class="col-sm-9">
+                        <dl class="row">
+                        <dt class="col-sm-4">Nested definition list</dt>
+                        <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
+                        </dl>
+                    </dd>
+            </dl>
+            <p class="border-bottom pb-5"></p>
+         </div>
+         <div class="mt-5">
+            <p class="h2 fs-1 fw-medium">Product Table</p>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">Product</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Quantity</th>
+                    </tr>
+                </thead>
+                <tbody class="fw-bold">
+                    <tr>
+                        <th scope="row"><img src="/Bootstrap_exercise/imgs/Chōdenji_Machine_Voltes_V.jpg" class="float-left rounded prod1pic" alt=""> Product 1</th>
+                        <td>9.99</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="/Bootstrap_exercise/imgs/Chōdenji_Machine_Voltes_V.jpg" class="float-left rounded prod1pic" alt=""> Product 2</th>
+                        <td>19.99</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><img src="/Bootstrap_exercise/imgs/Chōdenji_Machine_Voltes_V.jpg" class="float-left rounded prod1pic" alt=""> Product 3</th>
+                        <td>29.99</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+         </div>
+
+    </div>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
