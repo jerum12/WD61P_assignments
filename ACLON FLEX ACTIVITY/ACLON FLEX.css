@@ -1,0 +1,29 @@
+div, footer {
+    background-color: rgb(104, 103, 103);
+    border: 1px solid rgb(210, 98, 98);
+}
+.parent {
+    display: flex;
+}
+.container {
+    flex-basis: 50%;
+}
+.article-parent {
+    display: flex;
+}
+.article {
+    flex-basis: 100%;
+}
+.header, .article {
+    height: 100px;
+}
+.aside {
+    flex-basis: 50%;
+    border: none;
+}
+.menu {
+    height: 100%;
+}
+.footer-content {
+    height: 50px;
+}
