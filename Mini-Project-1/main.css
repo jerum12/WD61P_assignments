@@ -1,17 +1,21 @@
-* {
-    background-color: #120e26;
+#content-container {
+    background-image: url("/Mini-Project-1/images/bg1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 20%;
 }
 
-#ml-guides {
-    color: azure;
-    font-family: "Seymour One";
+#hey, #aspire {
+    color: white;;
 }
 
-.custom-toggler.navbar-toggler {
-    border-color: white;
-    box-shadow: none;
+#about-me {
+    padding: 5%;
 }
 
-.custom-toggler .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+#my-pic {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
 }
