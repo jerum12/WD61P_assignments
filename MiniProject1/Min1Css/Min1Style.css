@@ -1,0 +1,125 @@
+/*--------------------Main Section-----------------------*/
+.container-fluid{
+    background:url(Orangebg.jpg)no-repeat;
+    background-size: cover;
+    max-height: 95vh;
+    width: 100%;
+}
+body{
+background:url()no-repeat;
+background-size: contain;
+
+}
+.carouselExampleInterval{
+    border: 1px;
+}
+/* .main{ 
+    max-height: 95vh;
+    width: 100%;
+    border: 1px;
+ } */
+ .logo{
+    display:flex;
+ }
+
+/*--------------------primary navigation button-----------------------*/
+ #Primary-Navigation .container-fluid .wrapper {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    justify-content: space-between;
+ }
+#primary-navigation{
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+ .white-link-btn {
+    color: #f8f8f8;
+    text-decoration: none;
+ }
+ .white-link-btn:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f8f8f8;
+    transition: width .3s;
+}
+/*--------------------ENd primary navigation button-----------------------*/
+/*--------------------second navigation -----------------------*/
+#second-nav .container-fluid .wrapper {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    justify-content: space-between;
+ }
+#second-nav{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+ .white-link-btn {
+    color: #f8f8f8;
+    text-decoration: none;
+ }
+ .white-link-btn:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f8f8f8;
+    transition: width .3s;
+}
+/*--------------------ENd primary navigation button-----------------------*/
+
+/*--------------------Main page-----------------------*/
+.main{
+    margin-top: 80px;
+    margin-bottom: 150px;
+}
+.profile{
+   margin-bottom: 80px;
+}
+.btn4{
+height: 60px;
+width: 200px;
+background: red;
+color: white;
+/* outline: none;
+border: none; */
+}
+.btn4:hover{
+    background: blue;
+    transition: all 0.4s;
+}
+#intro{
+    margin-top: 20px;
+}
+#prof{
+    margin-left: 20px;
+}
+#main-section{
+    margin-bottom: 80px;
+}
+/*--------------------End Main page-----------------------*/
+
+#bdtop{
+    margin-top: 20px;
+}
+
+.icon-btn-white{
+color: #f8f8f8;
+transition: .3s cubic-bezier(.175,.885,.32,1.275);
+display: inline-block;
+font-size: large;
+padding: 7px 10px;
+border-radius: 5px;
+background-color: hsla(0,0%,97.3%,.1);
+}
+.imglib{
+    
+}
