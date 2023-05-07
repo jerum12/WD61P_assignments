@@ -19,3 +19,72 @@
     width: 150px;
     border-radius: 50%;
 }
+
+#resume-button {
+    margin-top: 2%;
+}
+
+#self-proc {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 0;
+}
+
+#feu-tech {
+    color: #00009c;
+    text-decoration: none;
+}
+
+#my-intro {
+    border: none;
+    background-color: #fff;
+}
+
+#selfproc-inside, #piano-card, #piano-cardd,
+#vball-card, #vball-cardd,
+#keyboard-card, #keyboard-cardd {
+    border: none;
+    background-color: #f0f0f0;
+}
+
+#about-me-section, #passion-section {
+    font-family: "Roboto", sans-serif;
+}
+
+#passion-section {
+    background-color: #f0f0f0;
+}
+
+#passion {
+    padding: 6%;
+}
+
+#code-bg {
+    display: inline-flex;
+    background-color: #00009c;
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+#code-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#code-icon:hover ,#design-icon:hover, #bulb-icon:hover {
+    rotate: 360deg;
+    transition: 0.75s;
+}
+
+#card-group, #code-cont, #pen-content, #code-content, #bulb-content {
+    background-color: transparent;
+    border: none;
+}
+
+#experience {
+    padding: 5%;
+}

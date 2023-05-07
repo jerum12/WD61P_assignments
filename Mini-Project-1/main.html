@@ -17,10 +17,10 @@
     <link rel="stylesheet" href="main.css">
 
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Seymour+One&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Seymour+One&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Seymour+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&family=Seymour+One&display=swap" rel="stylesheet">
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v6.0.0-beta3/css/all.css">
 
 </head>
 
@@ -35,9 +35,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-              <a class="nav-link"href="#">About</a>
-              <a class="nav-link" href="#">Passion</a>
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#about-me">About</a>
+              <a class="nav-link" href="#passion">Passion</a>
+              <a class="nav-link" href="#experience">Experience</a>
               <a class="nav-link" href="#">Contact</a>
             </div>
           </div>
@@ -45,23 +45,161 @@
       </nav>
     </header>
 
-    <section>
+    <section id="about-me-section">
       <div class="container-fluid" id="content-container">
         <div class="container text-center">
           <h1 class="display-1 fw-bolder" id="hey">HI, I'M JULYZA</h1>
-          <small class="fs-6" id="aspire">An aspiring full stack developer.</small>
+          <small class="fs-6 font-monospace" id="aspire">An aspiring full stack developer.</small>
+        </div>
+        <div class="container-fluid text-center" id="resume-button">
+            <a href="Resume_Pena_Julyza.pdf" target="_blank"><button type="button" class="btn btn-outline-info ">Resume</i></button></a>
         </div>
       </div>
     </section>
 
     <section>
       <div class="container-sm" id="about-me">
-        <div>
-          <h4 class="text-center">A LITTLE BIT ABOUT ME</h4>
+        <div class="card mb-3 mx-auto" style="max-width: 650px;" id="my-intro">
+          <div>
+            <h2 class="text-center">A LITTLE BIT ABOUT ME</h2><br>
+          </div>
+          <div>
+            <picture>
+              <img src="/Mini-Project-1/images/my_pic.jpg" class="img-fluid mx-auto d-block" alt="" id="my-pic"><br>
+            </picture>
+          </div>
+          <div class="container-sm">
+            <p class="text-center">Hey! My name is Julyza and I'm an aspiring full stack developer. I'm currently a second year student at <a href="https://www.feutech.edu.ph/" target="_blank" id="feu-tech">Far Eastern University Institute of Technology</a> pursuing a degree in Information Technology with a specialization in Web and Mobile Applications. I aspire toward a career that will allow me to channel my creativity through crafting beautiful software and engaging experiences.</p>
+          </div>
+          <div>
+            <p class="text-center">When I'm not on the computer, I enjoy travelling, swimming, and binge watching.</p>
+          </div>
         </div>
-        <picture>
-          <img src="/Mini-Project-1/images/my_pic.jpg" class="img-fluid mx-auto d-block" alt="" id="my-pic">
-        </picture>
+        <div class="card mb-3 mx-auto" style="max-width: 650px;" id="self-proc">
+          <div class="card-body">
+            <div class="">
+              <h5 class="card-title text-center">SELF PROCLAMATIONS:</h5><br>
+            </div>
+            <div class="card-group mb-3 mx-auto container-fluid" id="selfproc-inside">
+              <div class="card" style="max-width: 200px; min-width: 100px;" id="piano-card">
+                <div class="card-body mx-auto" id="piano-cardd">
+                  <i class="fa-duotone fa-piano fa-4x" style="--fa-primary-color: #555555; --fa-secondary-color: #555555;" id="piano"></i>
+                </div>
+                <div>
+                  <p class="text-center">Pianist</p>
+                </div>
+              </div>
+              <div class="card" style="max-width: 200px" id="keyboard-card">
+                <div class="card-body mx-auto" id="keyboard-cardd">
+                  <i class="fa-duotone fa-keyboard fa-4x" style="--fa-primary-color: #555555; --fa-secondary-color: #555555;"></i>
+                </div>
+                <div>
+                  <p class="text-center">Web Developer</p>
+                </div>
+              </div>
+              <div class="card" style="max-width: 200px" id="vball-card">
+                <div class="card-body mx-auto" id="vball-cardd">
+                  <i class="fa-solid fa-volleyball fa-4x" style="color: #555555;" id="vball"></i>
+                </div>
+                <div>
+                  <p class="text-center">Volleyball Player</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="passion-section">
+      <div class="container" id="passion">
+        <div><h2 class="text-center">WHAT I DO</h2></div><br><br>
+        <div class="card-group">
+          <div class="card" id="pen-content">
+            <div class="card-body">
+              <div id="code-cont">
+                <div id="code-bg">
+                  <i class="fa-regular fa-pen-nib fa-3x" id="design-icon" style="color: #ffffff;"></i>
+                </div>
+              </div>
+              <br><br><h5 class="text-center">DESIGN</h5><br>
+              <div>
+                <p class="card-text text-center">Design isn't just what a product looks like and feels like on the outside. Design encompasses the internal functionality of a product as well as the overall user experience. I strive to design interfaces and experiences that people can enjoy on all digital mediums.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="code-content">
+            <div class="card-body">
+              <div id="code-cont">
+                <div id="code-bg">
+                  <i class="fa-regular fa-code fa-3x" id="code-icon" style="color: #fff;"></i>
+                </div>
+              </div>
+              <br><br><h5 class="text-center">DEVELOPMENT</h5><br>
+              <div>
+                <p class="card-text text-center">With a strong foundation in computer science, I'm passionate about web design and development, and interested in mobile app development. As I grow as a developer, I hope to write clean, readable code that can be used by others and leveraged to create beautiful software.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card" id="bulb-content">
+            <div class="card-body">
+              <div id="code-cont">
+                <div id="code-bg">
+                  <i class="fa-regular fa-lightbulb fa-3x" id="bulb-icon" style="color: #ffffff;"></i>
+                </div>
+              </div>
+              <br><br><h5 class="text-center">INVOLVEMENT</h5><br>
+              <p class="card-text text-center">At Northeastern, I'm currently the web chair for nuWiT (NU Women in Tech) as well as a Teaching Assistant for the undergrad HCI course. Previously, I've been involved with the club water polo team, the resident student association, and the ski and snowboard club..</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience-section">
+      <div class="container-sm" id="experience">
+        <div class="card mb-3 mx-auto" style="max-width: 600px;" id="my-intro">
+          <div>
+            <h2 class="text-center">EXPERIENCE</h2><br>
+          </div>
+          <div class="container-sm">
+            <p class="text-center">I've been doing web development for about 1 year now, and I'm always eager to learn more in this fast paced industry.</p>
+          </div>
+        </div>
+        <div class="card-group">
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <img src="..." class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        
       </div>
     </section>
 
