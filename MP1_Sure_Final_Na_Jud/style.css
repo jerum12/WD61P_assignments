@@ -1,0 +1,485 @@
+body{
+background: linear-gradient(90deg, #00c3ff, #8c00ff);
+}
+
+.navbar {
+    background: linear-gradient(45deg, rgba(0, 195, 255, 0.5), rgba(140, 0, 255, 0.5));
+    backdrop-filter: blur(90px);
+  }
+
+.navbar-item{
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px;
+    color: #fff;
+}
+
+#Name{
+  text-shadow: 0 0 8px #ffff, 0 0 50px rgb(82, 8, 255), 0 0 80px aquamarine;
+}
+
+#contacts{
+  border-radius: 10px;
+  background-color: transparent;
+  color: #ffff;
+  border-width: 2px;
+  height: 3rem;
+  width: 12rem;
+  margin: 0 25px;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.5rem;
+  justify-content: center;
+  padding: 0%;
+  position: relative;
+  transform: 0.2s;
+}
+
+
+#contacts:hover{
+  color: #ffff;
+  background: #00c3ff;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: .1s;
+}
+
+/* .btn{
+    margin: 0 15px;
+} */
+
+.navbar-nav .nav-link:hover {
+    color: #ffff;
+    text-shadow: 0 0 10px #2196f3, 0 0 20px #00c3ff, 0 0 30px #00c3ff, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  }
+  
+  .navbar-nav .nav-link {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Change to inline css because cannot execute
+  .btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 25px;
+    border-radius: 100px;
+  } */
+  
+  /* @media (max-width: 991.98px) {
+    .navbar-nav .nav-link {
+      font-size: 1.2rem;
+    }
+    Change to inline css because cannot execute during global css
+    .btn {
+      font-size: 1.2rem;
+    }
+  } */
+
+  /* font-family: 'Roboto Mono', monospace;
+  font-family: 'Tilt Neon', cursive; */
+
+a{
+  text-decoration: none;
+}
+
+/* Download CV button with CSS Animation */
+
+.download{
+  /* margin: 5% 5%; */
+  padding: 2%;
+  justify-content: center;
+  display: flex;
+  position: relative;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-decoration: none;
+  color: #fff;
+  overflow: hidden;
+  transform: 0.2s;
+  height: 4rem;
+  box-shadow:0 20px 50px rgba(114, 2, 124, 0.5);
+  /* float: left; */
+}
+
+.download:hover{
+  color: #2196f3;
+  background: #00c3ff;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: 1.25s;
+}
+
+.download span{
+  position: absolute;
+  display: block;
+}
+
+.download span:nth-child(1){
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg,transparent,#41d1eb);
+}
+.download:hover span:nth-child(1){
+  left:100%;
+  transition: 1s;
+}
+
+.download span:nth-child(2){
+  top: -100%;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#41d1eb);
+}
+.download:hover span:nth-child(2){
+  top:100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+
+.download span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(270deg,transparent,#41d1eb);
+}
+.download:hover span:nth-child(3){
+  right:100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+
+.download span:nth-child(4){
+  bottom: -100%;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#41d1eb);
+}
+.download:hover span:nth-child(4){
+  bottom:100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+/* Hire Me Button with CSS Animation */
+
+.hire{
+  position: relative;
+  /* margin: 50% 0% 0% -10%; */
+  height: 4rem;
+  padding: 2%;
+  justify-content: center;
+  display: flex;
+  transform: 0.2s;
+  letter-spacing:4px;
+  text-transform:uppercase;
+  text-decoration:none;
+  float: right;
+  box-shadow:0 20px 50px rgba(114, 2, 124, 0.5);
+  overflow:hidden;
+}
+
+.hire span{
+  position: absolute;
+  display: block;
+}
+
+.hire:hover{
+  color: #2196f3;
+  background: #00c3ff;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: .1s;
+}
+
+.hire:before{
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  width: 50%;
+  background: rgba(255,255,255,0.05);
+}
+
+.hire span:nth-child(1){
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right,#02d6fc,#41d1eb);
+  animation: animate1 2s linear infinite;
+}
+
+@keyframes animate1{
+0%{
+  transform:translateX(-100%);
+}
+100%{
+  transform:translateX(100%);
+}
+}
+
+.hire span:nth-child(2)
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom,#02d6fc,#41d1eb);
+  animation: animate2 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate2{
+0%{
+  transform:translateY(-100%);
+}
+100%{
+  transform:translateY(100%);
+}
+}
+
+.hire span:nth-child(3){
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left,#02d6fc,#41d1eb);
+  animation: animate3 2s linear infinite;
+}
+
+@keyframes animate3{
+0%{
+  transform:translateX(100%);
+}
+100%{
+  transform:translateX(-100%);
+}
+}
+
+.hire span:nth-child(4)
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to top,#02d6fc,#41d1eb);
+  animation: animate4 2s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes animate4{
+0%{
+  transform:translateY(100%);
+}
+100%{
+  transform:translateY(-100%);
+}
+}
+
+/* About Me Section */
+#about-me {
+  width: 100%;
+  min-height: 100vh;
+  /* background: linear-gradient(315deg, #8c00ff, #00c3ff);
+  backdrop-filter: blur(90px); */
+  padding: 50px;
+}
+
+#about-me h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+#about-me p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#about-me a.btn-primary {
+  background-color: #7e27e9;
+  border-color: #7406ff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 10px 30px;
+}
+
+#about-me a.btn-primary:hover {
+  background-color: #4e00b4;
+  border-color: #4e00b4;
+}
+
+#about-me img {
+  border-radius: 10%;
+  border: 2px solid #00f0f8;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Mission and Vision Section */
+#mvc {
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50px);
+}
+
+#mission-vision h2 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+#mission-vision .lead {
+  color: #ffffff;
+  font-size: 1.25rem;
+}
+
+#mission-vision img {
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+}
+
+#mission-vision .col-lg-6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+#core{
+  padding: 1% 1%;
+}
+
+.core-box{
+  text-align: center;
+  padding: 2%;
+  color: aqua;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.core-img{
+  color: #ffff;
+  margin-bottom: 1rem;
+  height: 90px;
+  width: 90px;
+}
+
+.core-img:hover{
+  background: aqua;
+  color:#ffff;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+  transition-delay: .1s;
+}
+
+/* Project Section */
+
+#carousel{
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(50px);
+  padding: 1% 10% 0%;
+}
+
+#h2c{
+  font-size: 3rem;
+  color: aqua;
+  padding-top: 1%;
+}
+
+#pc{
+  font-size: 1.5rem;
+  color: rgb(191, 253, 253);
+  padding: 1% 10% 0%;
+}
+
+.project-title{
+  font-size: 7rem;
+  font-weight: bold;
+  letter-spacing: .5rem;
+  color: aqua;
+  padding: 5%;
+  text-align: center;
+}
+
+.carousel-fade .carousel-inner .carousel-item {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+/* Contact Me Section */
+
+#contact {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 80px 0;
+}
+
+#contact h2 {
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+
+#contact label {
+  color: #fff;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+  border: #680bff;
+  border-width: 2px;
+  border-radius: 0;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact textarea:focus {
+  outline: none;
+  box-shadow: 0 0 30px rgba(87, 3, 155, 0.5);
+  /* box-shadow: none; */
+}
+
+#contact textarea {
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  border-radius: 20px;
+  width: 200px;
+  background-color: transparent;
+  color: #ffff;
+  border-width: 2px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  transform: .2s;
+}
+
+#contact button:hover{
+  color: #ffff;
+  background: rgb(125, 32, 231);
+  box-shadow: 0 0 10px;
+}
