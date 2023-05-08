@@ -1,0 +1,194 @@
+#content-container {
+    background-image: url("/Mini-Project-1/images/bg1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 20%;
+}
+
+#hey, #aspire {
+    color: white;;
+}
+
+#about-me {
+    padding: 5%;
+}
+
+#my-pic {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+#resume-button {
+    margin-top: 2%;
+}
+
+#self-proc {
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 0;
+}
+
+#feu-tech {
+    color: #00009c;
+    text-decoration: none;
+}
+
+#my-intro {
+    border: none;
+    background-color: #fff;
+}
+
+#selfproc-inside, #piano-card, #piano-cardd,
+#vball-card, #vball-cardd,
+#keyboard-card, #keyboard-cardd {
+    border: none;
+    background-color: #f0f0f0;
+}
+
+#about-me-section, #passion-section {
+    font-family: "Roboto", sans-serif;
+}
+
+#passion-section {
+    background-color: #f0f0f0;
+}
+
+#passion {
+    padding: 6%;
+}
+
+#code-bg {
+    display: inline-flex;
+    background-color: #00009c;
+    height: 175px;
+    width: 175px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+#code-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#code-icon:hover ,#design-icon:hover, #bulb-icon:hover {
+    rotate: 360deg;
+    transition: 0.75s;
+}
+
+#card-group, #code-cont, #pen-content, #code-content, #bulb-content {
+    background-color: transparent;
+    border: none;
+}
+
+#experience {
+    padding: 5%;
+}
+
+.prog-langs {
+    height: 80px;
+}
+
+#prog-lang {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.card-custom {
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  
+  #card-g-exp, #card-g-exp2, #card-g-exp3 {
+    margin-top: 4%;
+  }
+
+  .exp-img  {
+    max-height: 70px;
+    max-width: 70px;
+  }
+  
+  #tech-i-work {
+    padding-top: 5%;
+  }
+
+  #where-work {
+    padding-top: 8% ;
+  }
+
+#contact {
+    background-color: #f0f0f0;
+    padding: 5%;
+}
+
+#plane {
+    margin-bottom: 2%;
+}
+
+#hello-btn {
+    border: solid;
+}
+
+.contact-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+}
+
+#contact-2 {
+    background-color: #222222;
+    padding: 5%;
+}
+
+.item-icon {
+    display: inline-flex;
+    height: 50px;
+    width: 50px;
+    background-color: #333;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+#fb:hover {
+    background-color: #4267B2;
+}
+#twitter:hover {
+    background-color: #1DA1F2;
+}
+#ig:hover {
+    background-color: #E1306C;
+}
+#linkedin:hover {
+    background-color: #0072b1;
+}
+#github:hover {
+    background-color: #24292f;
+}
+
+#contact-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#spaceship {
+    padding-top: 3%;
+} 
+
+#cc, #beam {
+    color: #fff;
+}
+
+#beam {
+    font-size: x-small;
+}
