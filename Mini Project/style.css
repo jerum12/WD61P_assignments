@@ -1,0 +1,259 @@
+
+body{
+    background:#1b1b2b;
+    background-image:url(image/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Oswald', sans-serif;
+    font-size: 100%;
+    margin-top: 200px;
+  }
+.title{
+    color: rgb(6, 6, 6);
+    font-size: 250%;
+    padding:5px 5px;
+  } 
+
+.home{
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-gap: 20px;
+}
+.home-menu
+ {
+    background-color: rgb(253, 253, 247);
+    opacity: 0.8;
+    overflow: hidden;
+    position: fixed;
+    top: 0; 
+    width: 99%; 
+    text-align:center;
+    height: 25%;
+    border-radius: 5px;
+}
+.menu{
+    color:#030000;
+    background:rgb(248, 251, 251);
+    padding:10px 10px;
+    text-decoration:none;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    font-size: 80%;
+    
+}
+  
+.menu:hover{
+    border:none;
+    background:rgba(0, 0, 0, 0.4);
+    background:#ff8000d3;
+    padding:10px 10px;
+    color:#1b1b1b;
+}
+
+.packageIntro {
+    text-align: center;
+    color: rgb(39, 39, 39);
+    border-radius: 2%;
+}
+
+.PackageIntro>img {
+    width: 97%;
+    border-radius: 5px;
+    height: auto;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    
+}
+
+
+.package {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    
+    width: 97%;
+ 
+    padding: 20px;
+    background-color: rgba(100, 98, 98, 0.288);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#packagemenu{
+    background-color: rgba(255, 255, 255, 0.837);
+    border-radius: 5px;
+    padding: 30px;
+    height: auto;
+}
+#packagemenu ul {
+    background-color: white;
+    border-radius: 5px;
+    list-style: none;
+    padding: 15px;
+}
+
+#packagemenu h2 {
+    text-shadow: 0.5px 0.5px black;
+}
+
+#packagemenu ul:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#packagemenu li {
+    float: left;
+    width: 80%;
+    padding: 0;
+    margin: 20px 0 20px 8%;
+    border-bottom: 1px solid slategray;
+}
+
+.Rate {
+    float: left;
+    color: #555;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+    padding-right: 15px;
+}
+
+.Price {
+    float: right;
+    color: #555;
+    font-weight: bold;
+    position: relative;
+    background-color: transparent;
+    padding-left: 15px;
+}
+
+.Description {
+    clear: both;
+    display: block;
+    color: #999;
+    font-style: italic;
+    font-size: 14px;
+    padding-top: 10px;
+    position: relative;
+    top: -8px;
+}
+.abt-img{
+    max-width:100%;height:auto;
+    width: 80%;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.teacherImg {
+    text-align: left;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.837);
+    border-radius: 5px;
+    
+}
+
+.teacherImg>img {
+    width: 100%;
+    border-radius: 2%;
+    height: auto;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+
+.teacher {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    width: 97%;
+    padding: 20px;
+    background-color: rgba(100, 98, 98, 0.288);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+    width: 97%;
+    padding: 20px;
+    padding-top: 10%;
+    padding-bottom: 9%;
+    background-image:url(image/bg2.jpg);
+    background-size: auto;
+    background-position:center;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 5px;
+}
+.contactdiv {
+    text-align: center;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.837);
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#icon{
+    margin-right: 15px;
+}
+.about {
+    display: flex;
+    
+    width: 97%;
+ 
+    padding: 20px;
+    background-color: rgba(100, 98, 98, 0.288);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+#aboutdiv{
+    background-color: rgba(255, 255, 255, 0.837);
+    border-radius: 5px;
+    padding: 30px;
+    height: auto;
+    text-align: justify;
+}
+.homeintro {
+    display: flex;
+    width: 40%;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgba(100, 98, 98, 0.288);
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.hometxt{
+    background-color: rgba(255, 255, 255, 0.837);
+    border-radius: 5px;
+    padding: 30px;
+    height: auto;
+    text-align: justify;
+}
+@media only screen and (max-width: 600px) {
+    .homeintro {
+        margin-left: 0%;
+        margin-right: 0%;
+        width: 90%;
+    }
+    
+    
+    .package {
+         grid-template-columns: auto;
+        
+    }   
+    .teacher {
+
+        grid-template-columns: auto;
+        
+  }
+  .contactdiv {
+    text-align: center;
+    padding: 5%;
+    background-color: rgba(255, 255, 255, 0.837);
+    border-radius: 5px;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+}
