@@ -1,0 +1,25 @@
+head.div {
+  flex-direction: column;
+  background-color: aqua;
+}
+.img {
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 100px;
+}
+.figure {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.row {
+  outline: 1px solid red;
+  display: flex;
+  align-items: baseline;
+}
+.figuresAndImages {
+  width: 100vw;
+  display: flex;
+}
+.list {
+  list-style-type: none;
+}
