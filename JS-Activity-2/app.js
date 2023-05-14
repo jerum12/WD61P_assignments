@@ -16,6 +16,7 @@ if(x < 0) {
     console.log("condition 4");
 }
 
+//my answer:
 console.log("|  x  |  y  |  condition  |  ans  |");
 console.log("| 1.5 |  2  |      4      |   6   |");
 console.log("| -1  | -1  |      1      |   3   |");
