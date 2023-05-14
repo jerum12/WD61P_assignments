@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sample Calculator</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="calcu.css" />
+    <script type="text/javascript" src="calcu.js"></script>
+  </head>
+
+  <body class="bg-black p-0 m-0">
+    <header>
+      <h1 class="text-center mt-2 mx-auto rounded-pill text-light bg-primary w-75">Calculator By: Skye</h1>
+    </header>
+    <main>
+      <div class="container d-flex flex-column align-items-center">
+        <textarea
+          id="display-answer"
+          class="w-100 px-3 py-2 fs-1 text-end"
+          rows="1"
+          readonly
+          disabled
+        ></textarea>
+        <textarea
+          id="display-formula"
+          class="w-100 px-3 py-2 fs-1 text-end"
+          rows="1"
+          type="number"
+          maxlength="5"
+          readonly
+          disabled
+        >0</textarea>
+        <div class="row bg-black py-5 pt-3 fw-bold my-container">
+            <div class="col-12 d-flex flex-row justify-content-center gap-2">
+                <p class="bg-secondary col-3 rounded-circle AC" onclick="allClear()">AC</p>
+                <p class="bg-secondary col-3 rounded-circle add-and-subtract" onclick="plusMinus()">+/-</p>
+                <p class="bg-secondary col-3 rounded-circle percent" onclick="enterPercent()">%</p>
+                <p class="bg-warning col-3 text-light rounded-circle divide" onclick="enterDivide()">/</p>
+            </div>
+            <div class="col-12 d-flex flex-row justify-content-center gap-2">
+                <p class="bg-secondary col-3 bg-opacity-25 text-light rounded-circle numbers seven" onclick="enterSeven()">7</p>
+                <p class="bg-secondary col-3 bg-opacity-25 text-light rounded-circle numbers eight" onclick="enterEight()">8</p>
+                <p class="bg-secondary col-3 bg-opacity-25 text-light rounded-circle numbers nine" onclick="enterNine()">9</p>
+                <p class="bg-warning col-3 text-light rounded-circle multiply" onclick="enterMultiply()">X</p>
+            </div>
+            <div class="col-12 d-flex flex-row justify-content-center gap-2">
+                <p class="bg-secondary col-3 bg-opacity-25 text-light rounded-circle numbers four" onclick="enterFour()">4</p>
+                <p class="bg-secondary col-3 bg-opacity-25 text-light rounded-circle numbers five" onclick="enterFive()">5</p>
+                <p class="bg-secondary col-3 bg-opacity-25 text-light rounded-circle numbers six" onclick="enterSix()">6</p>
+                <p class="bg-warning col-3 text-light rounded-circle subtract" onclick="enterSubtract()">-</p>
+            </div>
+            <div class="col-12 d-flex flex-row justify-content-center gap-2">
+                <p class="bg-secondary col-3 bg-opacity-25 text-light rounded-circle numbers one" onclick="enterOne()">1</p>
+                <p class="bg-secondary col-3 bg-opacity-25 text-light rounded-circle numbers two" onclick="enterTwo()">2</p>
+                <p class="bg-secondary col-3 bg-opacity-25 text-light rounded-circle numbers three" onclick="enterThree()">3</p>
+                <p class="bg-warning col-3 text-light rounded-circle add" onclick="enterPlus()">+</p>
+            </div>
+            <div class="col-12 d-flex flex-row justify-content-center gap-2">
+                <p class="bg-secondary col-6 bg-opacity-25 text-light rounded-pill numbers zero" onclick="enterZero()">0</p>
+                <p class="bg-secondary col-3 bg-opacity-25 text-light rounded-circle numbers dot" onclick="enterDot()">.</p>
+                <p class="bg-warning col-3 text-light rounded-circle equal" onclick="pressEqual()">=</p>
+            </div>
+      </div>
+    </main>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

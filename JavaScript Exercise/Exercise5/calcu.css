@@ -1,0 +1,32 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+textarea {
+    resize: none;
+    border: none !important;
+    color: whitesmoke;
+    max-width: 300px;
+    height: fit-content;
+    overflow: hidden;
+    background: transparent;
+}
+
+.rounded-circle {
+    height: 60px !important;
+    width: 60px !important;
+    display: grid;
+    place-items: center;
+}
+.zero {
+    width: 120px !important;
+    height: 60px !important;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.col-12 p:hover {
+    background: whitesmoke !important;
+    color: black !important;
+    transition-duration: 500ms;
+}
