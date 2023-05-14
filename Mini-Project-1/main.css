@@ -192,3 +192,9 @@
 #beam {
     font-size: x-small;
 }
+
+@media (max-width: 768px) {
+    #contact-icon {
+      flex-wrap: wrap;
+    }
+}
