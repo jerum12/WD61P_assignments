@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>ASDGC Dental Clinic</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    .test2 {
+        position: relative; /* Set the container to a relative position */
+    background-image: url('https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.6435-9/86233022_103375987918562_710481032066891776_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=l_ccH7QWLjcAX-CQCrn&_nc_ht=scontent.fmnl4-6.fna&oh=00_AfABpetPt7Q4UqaPvMmNz2Et3bY4srvFV9CcW_4XhpGTvQ&oe=646F309B'); /* Set the background image of the container */
+    background-size: cover; /* Scale the background image to cover the container */
+    background-position: center; /* Center the background image within the container */
+    color: #fff; /* Set the text color to white */
+    }
+
+    .test2::before {
+    content: ''; /* Add content to the pseudo-element */
+    display: block; /* Make the pseudo-element a block-level element */
+    position: absolute; /* Position the pseudo-element absolutely within the container */
+    top: 0; /* Align the top of the pseudo-element with the top of the container */
+    left: 0; /* Align the left of the pseudo-element with the left of the container */
+    width: 100%; /* Set the width of the pseudo-element to match the container */
+    height: 100%; /* Set the height of the pseudo-element to match the container */
+    background-color: rgba(0,0,0,0.5); /* Set the background color of the pseudo-element to a semi-transparent black */
+    opacity: 0.7; /* Set the opacity of the pseudo-element */
+    z-index: -1; /* Set the z-index of the pseudo-element to be behind the content */
+    }
+    .test2 {
+    position: relative; /* Set the content to a relative position */
+    z-index: 1; /* Set the z-index of the content to be in front of the pseudo-element */
+    }
+
+
+
+
+
+    .topNavHeight {
+      background: rgb(160, 74, 74);
+      border: 1px solid black;
+      border-radius: 50px;
+      height: 50px;
+      font-size: 30px;
+    }
+    .non-asdgc {
+      /* background-color: rgb(160, 74, 74); */
+      /* border: 1px solid red; */
+      height: 50px;
+      font-size: 25px;
+    }
+    /* .topBG {
+      border-style: border-box;
+      background: rgb(160, 74, 74);
+      border-bottom: 1px solid black;
+      border-top: 1px solid black;
+      height: 50px;
+    } */
+    .asdgc {
+      background-color: rgb(207, 190, 190);
+      width: 500px;
+      height: 70px;
+      margin-top: 50px;
+      margin-left: 100px;
+      padding-bottom: 0;
+      justify-content: center;
+      border: 1px solid black;
+      border-radius: 25px;
+      font-size: 40px;
+    }
+    .btnColor {
+        margin-top: 15px;
+        background-color: black;
+        border: 2px solid black;
+        font-size: 20px;
+        color: white;
+    }
+    .carouselHome {
+      border: 10px solid rgb(160, 74, 74);
+      border-radius: 50px;
+      margin-top: 50px;
+    }
+    .carouselWelcome {
+        margin-top: 75px;
+    }
+    .topPic {
+      margin-top: 100px;
+      border: 10px solid rgb(161, 72, 72);
+      border-radius: 50px;
+    }
+    .midPic {
+      margin-top: 50px;
+      border: 10px solid rgb(161, 72, 72);
+      border-radius: 50px;
+    }
+    .midWidth {
+      width: 75%;
+    }
+    .pInfo {
+      background-color: rgb(196, 167, 167);
+      font-size: 20px;
+    }
+    .p1 {
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 20px;
+      padding: 10px;
+    }
+    .p2 {
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 20px;
+      padding: 10px;
+    }
+    .p3 {
+      border: 1px solid rgb(0, 0, 0);
+      border-radius: 20px;
+      padding: 10px;
+    }
+    .pTop {
+      margin-top: 100px;
+    }
+    .pTop {
+      font-size: 30px;
+    }
+    .carousel-inner iframe{
+      margin: 0 auto;
+    }
+    .serviceTop {
+      position: relative;
+      top: 50px;
+    }
+    .service {
+      position: relative;
+      top: 50px;
+      height: 50px;
+      font-size: 30px;
+      border: 1px solid black;
+      border-radius: 20px;
+      background:rgb(172, 91, 91)
+    }
+    .service1 {
+      width: 100%;
+    }
+    .card0 {
+        margin-bottom: 50px;
+    }
+    .card {
+      border: 1px solid black;
+    }
+    .card2 {
+      margin-top: 50px;
+    }
+    .card3 {
+      margin-top: 50px;
+    }
+    .promoMargin {
+      margin-top: 100px;
+    }
+    .promoBorder {
+      border: 10px solid rgb(160, 74, 74);
+      border-radius: 50px;
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    .reviewMargin {
+      margin-top: 100px;
+      height: 200px;
+    }
+    .reviewHeight {
+      height: 50%;
+    }
+    .carouselHeight {
+      height: 500px;
+    }
+    .contactMargin {
+      margin-top: 100px;
+      margin-bottom: 300px;
+    }
+    .contact {
+        margin-bottom: 100px;
+        margin-top: 50px;
+    }
+    .accordion1 {
+      background:rgb(172, 91, 91);
+      color: white;
+    }
+    .accordion2 {
+        border: 1px solid black;
+        margin-bottom: 100px;
+    }
+    .map {
+        border: 1px solid black;
+        margin-left: 0px;
+        width: 100%;
+    }
+    /* 1200 pababa */
+    @media(max-width: 1200px){
+      .asdgc{
+        margin-top: 5px;
+      }
+      .non-asdgc > li{
+        background: white;
+      }
+    }
+    /* 600px pataas */
+    @media(min-width: 600px){
+      .pInfo{
+       font-size: 30px !important;
+      }
+    }
+    @media(max-width: 800px){
+      #Home {
+      height: 95px;
+    }
+    }
+    @media(max-width: 407px){
+      #Home {
+      height: 115px;
+    }
+    }
+    @media(max-width: 565px){
+      .appointment {
+      font-size: 15px;
+    }
+    }
+    @media(max-width: 700px){
+      .asdgc {
+      width: 300px;
+      height: 50px;
+      margin-top: 0px;
+      margin-left: 25px;
+      padding-bottom: 0;
+      justify-content: center;
+      border: 1px solid black;
+      border-radius: 25px;
+      font-size: 25px;
+    }
+    }
+    @media(max-width: 565px){
+      .appointment {
+      font-size: 15px;
+    }
+    }
+    @media(max-width: 411px){
+      .service {
+        font-size: 25px;
+        height: 45px;
+      }
+    }
+    @media(max-width: 768px){
+      .reviewsHeight {
+        height: 450px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="test2">
+    <!-- SCRIPTS FOR REVIEWS -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="khiHrRRu"></script>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="V6Y08Tuz"></script>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0" nonce="pAyNWUzf"></script>
+
+    <!-- SRIPTS FOR REVIEWS END -->
+    <div class="container-fluid topnav">
+      <!-- <div class="row topNavHeight fixed-top"> -->
+        <nav class="navbar navbar-expand-xl bg-body-tertiary row topNavHeight fixed-top">
+          <div class="container-fluid">
+            <div class="row">
+              <a class="asdgc text-center navbar-brand col-md-12 col-sm-12" href=""><strong>ASDGC Dental Center</strong></a>
+             </div>
+            <button class="navbar-toggler" style="background: rgb(207, 190, 190);" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto non-asdgc">
+                <li class="nav-item">
+                  <a class="nav-link active topBG" aria-current="page" href="#Home"><strong>Home</strong></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active topBG" aria-current="page" href="#About"><strong>About</strong></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active topBG" aria-current="page" href="#Service"><strong>Services</strong></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active topBG" aria-current="page" href="#Promo"><strong>Promos</strong></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active topBG" aria-current="page" href="#Review"><strong>Reviews</strong></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active topBG" aria-current="page" href="#Contact"><strong>Contact</strong></a>
+                </li>
+                <!-- <li class="nav-item ms-5 mt-1">
+                  <button class="btn btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Set an appointment</button>
+                </li> -->
+              </ul>      
+            </div>
+
+          </div>
+        </nav>
+        <div class="offcanvas offcanvas-end text-dark" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Set an appointment</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Name</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last name, First name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="N/A, if not applicable">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Phone number</label>
+              <input type="tel" class="form-control" id="exampleFormControlInput3" placeholder="+63 ">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Date of Appointment</label>
+              <input type="date" class="form-control" id="exampleFormControlInput2" placeholder="N/A, if not applicable">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">For additional concerns or inquiries</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3 text-danger">
+              <strong>Please be advised that you will receive a confirmation text for your appointment</strong>
+            </div>
+
+            <button class="btn btn-danger">Submit</button>
+          </div>
+        </div> 
+        <!-- <div class="col-6 col-sm-12 col-md-12 col-lg-6 text-center">
+          <div class="asdgc text-center"><strong>ASDGC Dental Center</strong></div>
+        </div>
+        <div class="col-1 col-sm-12 col-md-12 col-lg-1 text-center">
+          <a class="text-decoration-none text-dark non-asdgc" href="#Home"><strong>HOME</strong></a>
+        </div>
+        <div class="col-1 col-sm-6 col-md-6 col-lg-1 text-center">
+          <a class="text-decoration-none text-dark non-asdgc" href="#About"><strong>ABOUT</strong></a>
+        </div>
+        <div class="col-1 col-sm-6 col-md-6 col-lg-1 text-center">
+          <a class="text-decoration-none text-dark non-asdgc" href="#Service"><strong>SERVICES</strong></a>
+        </div>
+        <div class="col-1 col-sm-6 col-md-6 col-lg-1 text-center">
+          <a class="text-decoration-none text-dark non-asdgc" href="#Promo"><strong>PROMOS</strong></a>
+        </div>
+        <div class="col-1 col-sm-6 col-md-6 col-lg-1 text-center">
+          <a class="text-decoration-none text-dark non-asdgc" href="#Review"><strong>REVIEW</strong></a>
+        </div>
+        <div class="col-1 col-sm-6 col-md-6 col-lg-1 text-center">
+          <a class="text-decoration-none text-dark non-asdgc" href="#Contact"><strong>CONTACT</strong></a>
+        </div> -->
+      <!-- </div> -->
+    </div>
+    <div class="container-fluid midWidth">
+      <div class="row justify-content-center">
+        <!-- PICTURES!! -->
+        <div id="Home" class="col-10 service text-center mt-5 fs-2"><strong>Welcome to ASDGC Dental Center!</strong></br>
+          <button class="btn btnColor appointment" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><strong>CLICK</strong> here to set an appointment</button>
+        </div> 
+      </div>
+      <div class="row justify-content-center carouselWelcome">
+        <div class="col-12">
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner carouselHome">
+              <div class="carousel-item active">
+                <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.6435-9/86696655_103375617918599_5786736384249167872_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=1Nv8Z4qtTiMAX-qKolA&_nc_ht=scontent.fmnl4-3.fna&oh=00_AfAHuxDz8rwk2dY8-Z7zHhF2TfyqY8vsqL9SPL9W-FHxaw&oe=646F948E" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.6435-9/86695154_103375724585255_8184940629348843520_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rJPsG-bpbzMAX8Yiqsb&_nc_ht=scontent.fmnl4-3.fna&oh=00_AfA-bYcQ0LS16d5_UGqjKtpCOzWuLzb3QibVBwEPNR1peA&oe=646FC29B" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.6435-9/84632322_103375874585240_4215456464824696832_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=FsSeO8Cc6vIAX8pMxh2&_nc_ht=scontent.fmnl4-3.fna&oh=00_AfDVjbpf-87hBiLl1pEtKJkB1yNeGU5HhbQa1C_4TLecEw&oe=646FCC0C" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.6435-9/86428962_103375767918584_492114118665306112_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=tCtkOYXwDJIAX84UbR-&_nc_ht=scontent.fmnl4-6.fna&oh=00_AfD4nuhfSNJjf0lOQQYemvvVKTFQUtOFaoGUfcLPWY5ZrQ&oe=646FBBD0" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row justify-content-evenly">
+        <div class="col-4">
+          <img class="img-fluid topPic" src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.6435-9/86696655_103375617918599_5786736384249167872_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=1Nv8Z4qtTiMAX-qKolA&_nc_ht=scontent.fmnl4-3.fna&oh=00_AfAHuxDz8rwk2dY8-Z7zHhF2TfyqY8vsqL9SPL9W-FHxaw&oe=646F948E" alt="">
+        </div>
+        <div class="col-4">
+          <img class="img-fluid topPic" src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.6435-9/86695154_103375724585255_8184940629348843520_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=rJPsG-bpbzMAX8Yiqsb&_nc_ht=scontent.fmnl4-3.fna&oh=00_AfA-bYcQ0LS16d5_UGqjKtpCOzWuLzb3QibVBwEPNR1peA&oe=646FC29B" alt="">
+        </div>
+      </div>
+      <div class="row justify-content-evenly">
+        <div class="col-4">
+          <img class="img-fluid midPic" src="https://scontent.fmnl4-3.fna.fbcdn.net/v/t1.6435-9/84632322_103375874585240_4215456464824696832_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=FsSeO8Cc6vIAX8pMxh2&_nc_ht=scontent.fmnl4-3.fna&oh=00_AfDVjbpf-87hBiLl1pEtKJkB1yNeGU5HhbQa1C_4TLecEw&oe=646FCC0C" alt="">
+        </div>
+        <div class="col-4">
+          <img class="img-fluid midPic" src="https://scontent.fmnl4-6.fna.fbcdn.net/v/t1.6435-9/86428962_103375767918584_492114118665306112_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=tCtkOYXwDJIAX84UbR-&_nc_ht=scontent.fmnl4-6.fna&oh=00_AfD4nuhfSNJjf0lOQQYemvvVKTFQUtOFaoGUfcLPWY5ZrQ&oe=646FBBD0" alt="">
+        </div>
+      </div> -->
+      <div class="row justify-content-center">
+        <div id="About" class="col-10 service text-center "><strong>About Us</strong></div> 
+      </div>
+      <!-- ABOUT!!! -->
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-12 col-sm-12 col-lg-8 pTop text-center">
+          <p class="p1 pInfo"> ASDGC Dental Center was established on February 17, 2020 before the pandemic lockdown was implemented. 
+            During its starting period it has provided a quality service to many people around the area but has stopped
+            its operation for more than 3 months when the lock down was implemented.</p>
+          <br>
+          <p class="p2 pInfo "> It offers a wide range quality of services such as Oral Prophylaxis, Dental Extraction, Dentures,
+            Dental Veneers, Braces, Wisdom Tooth Removal, etc to help 
+            straighten customer's teeth, to improve and achieve
+            their ideal smile.</p>
+          <br>
+          <p class="p3 pInfo"> ASDGC Dental Center as of now only has 1 branch located in Fortune, Marikina and soon will be establishing another branch in Quezon City. 
+            It is owned by a family of doctors and has over a decade of dental practice.</p>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div id="Service"class="col-10 service text-center card0"><strong>Services Offered</strong></div> 
+      </div>
+      <!-- FIRST ROW! -->
+      <div class="container service1 text-dark">
+      <div class="row justify-content-evenly text-center">
+        <div class="col-12 col-md-5 col-sm-5 col-lg-3 card card2">
+          <!-- <img src="https://www.dentist-manila.com/wp-content/uploads/2017/03/oral-prophylaxis.png" class="card-img-top" alt="..."> -->
+          <div class="card-body mt-4">
+            <img src="https://www.dentist-manila.com/wp-content/uploads/2017/03/oral-prophylaxis.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Oral Prophylaxis</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-sm-5 col-lg-3 card card2">
+            <div class="card-body mt-4">
+            <img src="https://gp-assets-1.growthplug.com/website_files/2020/07/14/bigstock-Dental-Caries-Filling-With-De-340798633.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Dental Filling</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-sm-5 col-lg-3 card card2">
+            <div class="card-body">
+            <img src="https://yourgilbertdentist.com/wp-content/uploads/2019/04/Illustration-Tooth-Extraction-scaled.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Dental Extraction</h5>
+          </div>
+        </div>
+      </div>
+      <!-- SECOND ROW!!!! -->
+      <div class="row justify-content-evenly text-center">
+        <div class="col-12 col-md-5 col-sm-5 col-lg-3 card card3">
+          <div class="card-body">
+            <img src="https://drrenudentalclinic.com/wp-content/uploads/2021/03/pitandfissure1.webp" class="card-img-top" alt="...">
+            <h5 class="card-title">Pits and Fissure Sealants</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-sm-5 col-lg-3 card card3">
+          <div class="card-body mt-4">
+            <img src="https://elevatedental.ph/wp-content/uploads/2021/08/enamelast_application-benson.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Fluoride Application</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-sm-5 col-lg-3 card card3">
+          <div class="card-body mt-2">
+            <img src="https://southgablesdental.com/wp-content/uploads/2017/12/Root-Canal-Therapy.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Root Canal Therapy</h5>
+          </div>
+        </div>
+      </div>
+      <!-- THIRD ROW!!! -->
+      <div class="row justify-content-evenly text-center">
+        <div class="col-12 col-md-5 col-sm-5 col-lg-3 card card3">
+          <div class="card-body">
+            <img src="https://www.jasperfamilydental.com/wp-content/uploads/2021/12/Horseshoe-Dentures.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Dentures</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-sm-5 col-lg-3 card card3">
+          <div class="card-body">
+            <img src="https://www.templesquaredental.com/wp-content/uploads/2021/11/what-is-the-difference-between-dental-crowns-and-bridges.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Dental Crowns and Bridges</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-sm-5 col-lg-3 card card3">
+          <div class="card-body mt-4">
+            <img src="https://lirp.cdn-website.com/7cc637d2/dms3rep/multi/opt/teeth-before-and-after-1920w.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Dental Veneers</h5>
+          </div>
+        </div>
+      </div>
+      <!-- FOURTH ROW!! -->
+      <div class="row justify-content-evenly text-center">
+        <div class="col-12 col-md-5 col-sm-5 col-lg-3 card card3">
+          <div class="card-body mt-4">
+            <img src="https://www.colgate.com/content/dam/cp-sites/oral-care/oral-care-center/global/article/gscp/asia/at-the-dentist.jpg" class="card-img-top" alt="...">
+            <h5 class="card-title">Laser Teeth Whitening</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-sm-5 col-lg-3 card card3">
+          <div class="card-body mt-4">
+            <img src="https://vossdental.com/wp-content/uploads/2020/01/wisdom-teeth-removal-cost.png" class="card-img-top" alt="...">
+            <h5 class="card-title">Wisdom Tooth Removal</h5>
+          </div>
+        </div>
+        <div class="col-12 col-md-5 col-sm-5 col-lg-3 card card3">
+          <div class="card-body">
+            <img src="https://www.thantakit.com/wp-content/uploads/2020/03/ing_19047_01455.jpeg" class="card-img-top" alt="...">
+            <h5 class="card-title">Dental Braces</h5>
+          </div>
+        </div>
+      </div>
+      </div>
+      <div class="row justify-content-center">
+        <div id="Promo" class="col-10 service text-center"><strong>Promos</strong></div> 
+      </div>
+      <div class="col-12 promoMargin row justify-content-center">
+          <img class="img-fluid promoBorder" src="https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-6/302529159_600360838220072_2284494636249526636_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=RuxV9jeFppMAX8n1Edc&_nc_ht=scontent.fmnl8-2.fna&oh=00_AfDCv5aeiz3gIggtCsZhcXitACGqcFyihNNcqr1Az1vGMw&oe=645B972C" alt="https://scontent.fmnl8-2.fna.fbcdn.net/v/t39.30808-6/302529159_600360838220072_2284494636249526636_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=RuxV9jeFppMAX8n1Edc&_nc_ht=scontent.fmnl8-2.fna&oh=00_AfDCv5aeiz3gIggtCsZhcXitACGqcFyihNNcqr1Az1vGMw&oe=645B972C">
+      </div>
+      <!-- HANGGANG DITO LANG MUNA YUNG LINE -->
+      <div class="row justify-content-center">
+        <div id="Review" class="col-10 service text-center"><strong>Reviews</strong></div> 
+      </div>
+      <div id="carouselExample" class="reviewsHeight row carousel slide reviewMargin d-flex">
+        <div class="carousel-inner text-center carouselHeight d-flex">
+          <div class="row carousel-item active">
+            <!-- <div class="fb-post col-4 col-sm-12 col-md-12 col-lg-4" data-href="https://www.facebook.com/mics.uranza/posts/pfbid0PE9YwyTYyYmnA8fry31a1HszyiXKXHaH81fix92eMgQq96TFB5d7aVv6kjNazq8Kl" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/mics.uranza/posts/4051418534889630" class="fb-xfbml-parse-ignore"><p>Highly recommended. 
+              Magaan po ung kamay ni Dra. Hindi mo mamamalayan na tapos na pala ung pag aayos niya  sa  ngipin mo...</p>Posted by <a href="#" role="button">Mics Uranza</a> on&nbsp;<a href="https://www.facebook.com/mics.uranza/posts/4051418534889630">Saturday, March 13, 2021</a></blockquote></div>
+            <div class="fb-post col-4 col-sm-12 col-md-12 col-lg-4" data-href="https://www.facebook.com/MIKstuffins/posts/pfbid02DSukdL75RuatenZzbJH7ZpjnZtTS2dxYK91J1pGRPkXpYn3dNbqVFHcLPivEcaqyl" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/MIKstuffins/posts/4449834151712563" class="fb-xfbml-parse-ignore"><p>Had a great and smooth experience here. Dr. Custodio is very friendly, respectful, and had a genuine care to her patients. Definitely recommended ♥️</p>Posted by <a href="#" role="button">Michaela Bongalon-Canta</a> on&nbsp;<a href="https://www.facebook.com/MIKstuffins/posts/4449834151712563">Thursday, May 6, 2021</a></blockquote></div> -->
+            <iframe class="col-12 col-md-5 col-sm-12 col-lg-5 reviewHeight" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMIKstuffins%2Fposts%2Fpfbid0A5Ra1JkTQGjzDPvTr5rPUYCsECa2CpMPc5B6cHJenNF5FKZ6UxV2M7kZD6QxDNrbl&show_text=true&width=500"></iframe>           
+            <iframe class="col-12 col-md-5 col-sm-12 col-lg-5 reviewHeight" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fedrick.guzman.94%2Fposts%2Fpfbid0MNMfFUFnzfaSkuY8Tm9LJ1cqvto6zyRmKahumtJ6KM633BzGWpL32cU7juf8y5gJl&show_text=true&width=500"></iframe>
+          </div>
+          <div class="row carousel-item">
+            <!-- <div class="fb-post col-4" data-href="https://www.facebook.com/edrick.guzman.94/posts/pfbid0MgABWyZFzmy46GgKpZ1HV7XRUvyYgEd2K5c1JUN8pNxXrNk89vtW75rbaQAtW4VPl" data-width="450" data-show-text="false"><blockquote cite="https://www.facebook.com/edrick.guzman.94/posts/313508020344221" class="fb-xfbml-parse-ignore"><p>Dental Clinic’s really clean and well maintained (Health protocols strictly followed). Dentist is really nice and...</p>Posted by <a href="https://www.facebook.com/edrick.guzman.94">Edrick Guzman</a> on&nbsp;<a href="https://www.facebook.com/edrick.guzman.94/posts/313508020344221">Monday, May 24, 2021</a></blockquote></div>
+            <div class="fb-post col-4" data-href="https://www.facebook.com/christoper.pagobo/posts/pfbid09qzVMcZH3v5w6cdvmdHCUvv3DwbBBnjs1FVzsg6X74s9tfcSzsFAXK7MK2joQVr4l" data-width="500" data-show-text="false"><blockquote cite="https://www.facebook.com/christoper.pagobo/posts/4141615955862773" class="fb-xfbml-parse-ignore"><p>Great service! New facilities and equipment that are well-maintained! The dentist is very approachable and responsive.</p>Posted by <a href="https://www.facebook.com/christoper.pagobo">Christoper Pagobo</a> on&nbsp;<a href="https://www.facebook.com/christoper.pagobo/posts/4141615955862773">Wednesday, March 17, 2021</a></blockquote></div> -->
+            <iframe class="col-12 col-md-5 col-sm-12 col-lg-5 reviewHeight" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fdivinegrace.luciano%2Fposts%2Fpfbid02Agb6N7Ed4h1LshwPKGXGTx37JEYvPBRbttQefNb5tp2XJr6smNcw4aoKit3gCiG3l&show_text=true&width=500"></iframe>
+            <iframe class="col-12 col-md-5 col-sm-12 col-lg-5 reviewHeight" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fchristoper.pagobo%2Fposts%2Fpfbid0A29Vekq1sT6FcUEtErpVi5qxw2H8wAT4wo4Rh46BKM4LThvNSmH41T9juxdNRoGdl&show_text=true&width=500"></iframe>          
+          </div>
+          <div class="row carousel-item">
+            <iframe class="col-12 col-md-5 col-sm-12 col-lg-5 reviewHeight" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fchristoper.pagobo%2Fposts%2Fpfbid0A29Vekq1sT6FcUEtErpVi5qxw2H8wAT4wo4Rh46BKM4LThvNSmH41T9juxdNRoGdl&show_text=true&width=500"></iframe>          
+            <iframe class="col-12 col-md-5 col-sm-12 col-lg-5 reviewHeight" src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Finah.pascasio%2Fposts%2Fpfbid0UnRfJLmB5LGAN3ZqRHAtQt5AMZceduqk4ZhjWo9DJVh6DoACbMcBPwkKr9ZTk6cFl&show_text=true&width=500"></iframe>      
+          </div>
+         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="row justify-content-center">
+        <div id="Contact" class="col-10 service text-center contact"><strong>Contact Us</strong></div> 
+      </div>
+      <div class="row justify-content-center ">
+        <div class="col-12 col-md-12 col-sm-12 col-lg-8contactMargin">
+          <div class="accordion accordion2" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button accordion1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  BY PHONE
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show accordion3" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  You can call us in our globe number: +63 917 636 9202
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed accordion1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  BY EMAIL
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  You can also send us an email at <a class="text-primary">asdgc@email.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed accordion1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  BY SOCIAL MEDIA
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  You can also visit us in our social media page:
+                  <br>
+                  <a class="text-decoration-none text-dark" href="https://www.facebook.com/ASDGCDentalCenter" target="_blank"><i class="fa-brands fa-square-facebook"></i> Facebook</a>
+                  <br>
+                  <a class="text-decoration-none text-dark" href="https://www.instagram.com/asdgc_dentalcenter" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed accordion1" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  BY VISIT
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  You can visit us at <i class="fa-solid fa-map-pin"></i> 2/F, A&O Building, Champaca Street, Barangay Fortune, Marikina City, Marikina City, Philippines.
+                  <br>
+                  You can waze or google map "ASDGC Dental Clinic" for better navigation 
+                  <br>
+                  We accept walk-ins and appointments
+                  <hr>
+                  <iframe class="map text-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1929.9306321646586!2d121.12464998757157!3d14.663813618876166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b9e0f9fff937%3A0x797195404adff4aa!2sASDGC%20Dental%20Center!5e0!3m2!1sen!2sph!4v1683094617798!5m2!1sen!2sph" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- DULO TO NG DIV CONTAINER -->
+    </div>
+    
+
+
+
+      <!-- <div>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FMIKstuffins%2Fposts%2Fpfbid02Dd4kvUNpFXGDcuXn4GNQJLuPAATuBMhPNmiomUMe135oQQb2w2EemudvV4uTaHQLl&show_text=true&width=500" width="500" height="188" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fedrick.guzman.94%2Fposts%2Fpfbid0MNMfFUFnzfaSkuY8Tm9LJ1cqvto6zyRmKahumtJ6KM633BzGWpL32cU7juf8y5gJl&show_text=true&width=500" width="500" height="250" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            <div class="carousel-item">
+              <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fdivinegrace.luciano%2Fposts%2Fpfbid02Agb6N7Ed4h1LshwPKGXGTx37JEYvPBRbttQefNb5tp2XJr6smNcw4aoKit3gCiG3l&show_text=true&width=500" width="500" height="186" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>        </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+    </div> -->
+    
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</div>
+</body>
+
+</html>
