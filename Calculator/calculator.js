@@ -1,5 +1,5 @@
 let display = document.getElementById('displayText');
-// let buttons = Array.from(document.getElementsByTagName('button'));
+let buttons = Array.from(document.getElementsByTagName('button'));
 
  buttons.map( button => {
      button.addEventListener('click', (e) => {
@@ -11,7 +11,11 @@ let display = document.getElementById('displayText');
                 display.innerText = display.innerText.slice(0,-1);
                 break;
             case '=':
-                display.innerText = eval(display.innerText);
+                try{
+                    display.innerText = eval(display.innerText);
+                    } catch {
+                        display.innerText = 'Undefined';
+                    }
                 break;
             default:
                 display.innerText += e.target.innerText;
