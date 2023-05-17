@@ -26,16 +26,10 @@ console.log(girlStudents);
 
 
 const girls = students.filter(filterStudents)
-//console.log(girls);
+
 function filterStudents(name){
     return name !== 'Piolo' && name !== 'Dingdong' && name !== 'Luis' && name !== 'Robi' && name !== 'Jireh'
 }
 
 console.log("girsl list ",girls);
 
-// let girls = ['Elen','Sam','Pia','Barbie','Jessie','Marian']
-// for(let i in girls)
-//  if(students.includes(girls(i))) 
-//     console.log(girls)
-
-// console.log(students);
