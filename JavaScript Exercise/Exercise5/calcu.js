@@ -127,7 +127,7 @@ const allClear = () => {
 }
 
 /* ADDING OF MATHEMATICAL OPERATORS */
-const myOperators = ["+", "-", "*", "/", "%"];
+const myOperators = ["+", "-", "*", "/", "%", "--"];
 let myAddition = 0;
 let mySubtraction = 0;
 let myMultiplication = 1;
@@ -209,8 +209,28 @@ const plusMinus = () => {
 const pressEqual = () => {
     const theFormula = document.querySelector("#display-formula");
     const theAnswer = document.querySelector("#display-answer");
-    theAnswer.innerHTML = eval(theFormula.innerHTML);
-    theFormula.innerHTML = 0;
+    const dispArray = theFormula.innerHTML.split("");
 
+    console.log(dispArray);
+
+    const realOperator = myOperators;
+    if (realOperator.length > 4) {
+        realOperator.pop();
+        console.log(realOperator);
+    }
+    console.log(theFormula.innerHTML.charAt(theFormula.innerHTML.length - 1));
+    for (let i in dispArray) {
+        if (realOperator.includes(theFormula.innerHTML.charAt(theFormula.innerHTML.length - 1))) {
+            return
+        } else {
+            if (realOperator.includes(dispArray[i])) {
+                theAnswer.innerHTML = eval(theFormula.innerHTML);
+                theFormula.innerHTML = 0;
+                break;
+            }
+        }
+    }
+
+    
 }
 
