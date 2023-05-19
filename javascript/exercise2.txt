@@ -1,0 +1,5 @@
+1. second condition. ans=-0.5
+2. first condition. ans = 3
+3. third condition ans = 1.25
+4. second condition ans =6
+5. second condition ans =-0.5
