@@ -1,5 +1,3 @@
-//needs improvement
-
 let a = [
   { x: 1.5, y: 2 },
   { x: -1, y: -1 },
