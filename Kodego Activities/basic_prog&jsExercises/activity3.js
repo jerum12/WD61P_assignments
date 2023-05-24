@@ -16,19 +16,24 @@ console.log(students);
 students.push('Ken');
 console.log(students);
 
- students.filter(returnAllGirls)
 
- function returnAllGirls (students){
-     return students !== 'Sam' && students !== 'Piolo' && students !== 'Dingdong' && students !== 'Luis' && students !=='Robi' && students !== 'Ken'; 
- }
 
-// console.log(students);
+//   students.filter(returnAllGirls)
 
-//  students.splice(1,3);
+//  function returnAllGirls (students){
+//      return students !== 'Sam' && students !== 'Piolo' && students !== 'Dingdong' && students !== 'Luis' && students !=='Robi' && students !== 'Ken'; 
+//  }
+
+//  returnAllGirls();
 //  console.log(students);
 
-//  students.splice(4,1);
-//  console.log(students);
+ console.log(students);
 
-//  students.splice(5,1);
-//  console.log(students);
+  students.splice(1,3);
+  console.log(students);
+
+  students.splice(4,1);
+  console.log(students);
+
+  students.splice(5,1);
+  console.log(students);

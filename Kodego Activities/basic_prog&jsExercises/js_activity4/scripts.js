@@ -37,6 +37,8 @@
     },
   ];
 
+   
+
    const img = document.createElement("img");
    img.src = "logo.png";
    img.setAttribute("style", "margin-top: 10px;");
@@ -44,40 +46,38 @@
    document.getElementById("root").appendChild(img);
    img.setAttribute("style", "text-align:center");
 
+
+  var body = document.getElementById('root');
   
-  for (let i = 0; i < presidents.length; i++){
+  const presidentBody = document.querySelector('#root');
 
-   let divE = document.createElement('div');
-    divE.setAttribute ('class', 'card');
+  const presidentDiv =  document.createElement('div');
+  presidentBody.appendChild(presidentDiv);
+  presidentDiv.setAttribute('class', 'container');
 
-   let h1E = document.createElement ('h1');
-   divE.appendChild (h1E);
-   h1E.classList.add ('card');
-   h1E.textContent = presidents [i].name;
-   
-   let pE = document.createElement ('p');
-   divE.appendChild (pE);
-   pE.classList.add ('card');
-   pE.textContent = presidents [i].details;
-   pE.setAttribute ("style", "text-align:center");
-   
-   document.getElementById("root").appendChild(divE);
 
-  } 
+  const presidentCards = () => {
+    for (i = 0 ; i < presidents.length ; i++){ 
+      const presidentCard =  document.createElement('div');
+      presidentDiv.appendChild(presidentCard);
+      presidentCard.setAttribute('class', 'card');
+
+      const CardPresident = document.createElement('h1');
+      presidentCard.appendChild(CardPresident);
+      CardPresident.setAttribute('class','card-title');
+      CardPresident.style.padding = '10px'
+      CardPresident.innerHTML = presidents[i].name;
+
+      const YearCard = document.createElement('div');
+      presidentCard.appendChild(YearCard);
+      YearCard.setAttribute('class','card-body');
+
+      const YearCardValue = document.createElement('p');
+      YearCard.appendChild(YearCardValue);
+      YearCardValue.style.textAlign = 'center';
+      YearCardValue.style.padding = '0px'
+      YearCardValue.innerHTML = presidents[i].details;
+      }
+    }
+  presidentCards();
   
-   
-
-
-
-
-
-
-
- 
-
-    
-        
-        
-    
-
-    
