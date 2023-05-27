@@ -12,4 +12,8 @@ if(removeRobi > -1) {
 }
 console.log(students);
 
-//3.
+//3. command that gives indexOf where Pia is located
+
+//4. command to add your name to the end of the array
+
+//5. command that return all the girls name in the array of students
