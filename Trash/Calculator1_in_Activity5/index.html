@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JPA Calculator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" type="externalcss" href="styles.css">
+</head>
+<body style="text-align: center;">
+  <div class="calculator glassmorphism" style="padding: 20px; width: 500px; margin: auto; border-radius: 10px; background: rgba(75, 80, 126, 0.3); backdrop-filter: blur(10px); box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
+    <input type="text" id="result" readonly style="width: 400px; height: 100px;">
+    <div class="keypad" style="margin-top: 20px;">
+      <div class="row">
+        <div class="col">
+          <button onclick="appendSymbol('7')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">7</button>
+        </div>
+        <div class="col">
+          <button onclick="appendSymbol('8')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">8</button>
+        </div>
+        <div class="col">
+          <button onclick="appendSymbol('9')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">9</button>
+        </div>
+        <div class="col">
+          <button onclick="appendSymbol('/')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">/</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button onclick="appendSymbol('4')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">4</button>
+        </div>
+        <div class="col">
+          <button onclick="appendSymbol('5')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">5</button>
+        </div>
+        <div class="col">
+          <button onclick="appendSymbol('6')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">6</button>
+        </div>
+        <div class="col">
+          <button onclick="appendSymbol('*')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">x</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button onclick="appendSymbol('1')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">1</button>
+        </div>
+        <div class="col">
+          <button onclick="appendSymbol('2')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">2</button>
+        </div>
+        <div class="col">
+          <button onclick="appendSymbol('3')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">3</button>
+        </div>
+        <div class="col">
+          <button onclick="appendSymbol('-')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">-</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button onclick="appendSymbol('0')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">0</button>
+        </div>
+        <div class="col">
+          <button onclick="appendSymbol('.')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">.</button>
+        </div>
+        <div class="col">
+          <button onclick="calculateResult()" class="btn btn-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">=</button>
+        </div>
+        <div class="col">
+          <button onclick="appendSymbol('+')" class="btn btn-outline-primary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">+</button>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <button onclick="clearResult()" class="btn btn-outline-danger" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">C</button>
+        </div>
+        <div class="col">
+          <button onclick="deleteLastChar()" class="btn btn-outline-secondary" style="width: 70px; height: 70px; margin: 5px; font-size: 24px; border-radius: 5px;">&larr;</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
