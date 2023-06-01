@@ -1,19 +1,22 @@
 let students = ['Elen', 'Sam', 'Piolo', 'Dingdong', 'Pia', 'Barbie', 'Jessie', 'Luis', 'Robi', 'Marian'];
 
-//1. using a loop, iterate throught this array and console.log all the students
-for(let i = 0; i < students.length; i++) {
+// 1. Iterate through the array and console.log all the students
+for (let i = 0; i < students.length; i++) {
     console.log(students[i]);
 }
 
-//2. command to remove Robi from the array
-const removeRobi = students.findIndex(student => student === 'Robi');
-if(removeRobi > -1) {
-    students.splice(removeRobi, 1);
+// 2. Remove 'Robi' from the array
+let index = students.indexOf('Robi');
+if (index > -1) {
+    students.splice(index, 1);
 }
-console.log(students);
 
-//3. command that gives indexOf where Pia is located
+// 3. Get the index of 'Pia'
+console.log(students.indexOf('Pia'));
 
-//4. command to add your name to the end of the array
+// 4. Add your name to the end of the array
+students.push('Julyza');
 
-//5. command that return all the girls name in the array of students
+// 5. Return all the girls' names in the array of students
+let girls = students.filter(student => !['Sam', 'Dingdong', 'Luis'].includes(student));
+console.log(girls);
