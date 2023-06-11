@@ -10,13 +10,16 @@ let index = students.indexOf('Robi');
 if (index > -1) {
     students.splice(index, 1);
 }
+console.log(students);
 
 // 3. Get the index of 'Pia'
 console.log(students.indexOf('Pia'));
 
 // 4. Add your name to the end of the array
 students.push('Julyza');
+console.log(students);
 
 // 5. Return all the girls' names in the array of students
-let girls = students.filter(student => !['Sam', 'Dingdong', 'Luis'].includes(student));
-console.log(girls);
+let namesToDelete = ['Sam', 'Piolo', 'Dingdong', 'Luis'];
+let updatedStudents = students.filter(student => !namesToDelete.includes(student));
+console.log(updatedStudents);
