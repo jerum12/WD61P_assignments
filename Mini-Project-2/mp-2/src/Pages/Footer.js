@@ -113,13 +113,12 @@ function Footer() {
                                 <b style={{color: '#fff'}}>Support</b>
                             </div>
                             <div>
-                                <Link style={{textDecoration: "none", color: "#fff", fontSize: "13px"}}>Payment</Link>
+                                <Link as={Link} to="/payment"
+                                      style={{textDecoration: "none", color: "#fff", fontSize: "13px"}}>Payment</Link>
                             </div>
                             <div>
-                                <Link style={{textDecoration: "none", color: "#fff", fontSize: "13px"}}>Returns</Link>
-                            </div>
-                            <div>
-                                <Link style={{textDecoration: "none", color: "#fff", fontSize: "13px"}}>FAQ</Link>
+                                <Link as={Link} to="/returns"
+                                      style={{textDecoration: "none", color: "#fff", fontSize: "13px"}}>Returns</Link>
                             </div>
                         </div>
                     </Card.Body>
@@ -137,11 +136,11 @@ function Footer() {
                                     Us</Link>
                             </div>
                             <div>
-                                <Link as={Link}
+                                <Link as={Link} to="/careers"
                                       style={{textDecoration: "none", color: "#fff", fontSize: "13px"}}>Careers</Link>
                             </div>
                             <div>
-                                <Link as={Link}
+                                <Link as={Link} to="/merchants"
                                       style={{textDecoration: "none", color: "#fff", fontSize: "13px"}}>Merchants</Link>
                             </div>
                             <div>

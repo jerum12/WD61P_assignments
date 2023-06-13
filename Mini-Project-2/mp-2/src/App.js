@@ -7,6 +7,10 @@ import Dogs from './Pages/Dogs';
 import Fishes from './Pages/Fishes';
 import AboutUs from './Pages/AboutUs';
 import ContactUs from "./Pages/ContactUs";
+import Career from './Pages/Career';
+import Merchants from './Pages/Merchants';
+import Payment from './Pages/Payment';
+import Returns from './Pages/Returns';
 
 function App() {
     return (
@@ -19,6 +23,10 @@ function App() {
                     <Route path="/fishes" element={<Fishes/>}/>
                     <Route path="/aboutus" element={<AboutUs/>}/>
                     <Route path="/contactus" element={<ContactUs/>}/>
+                    <Route path="/careers" element={<Career/>}/>
+                    <Route path="/merchants" element={<Merchants/>}/>
+                    <Route path="/payment" element={<Payment/>}/>
+                    <Route path="/returns" element={<Returns/>}/>
                 </Routes>
             </BrowserRouter>
         </div>
