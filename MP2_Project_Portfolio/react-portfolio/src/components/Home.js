@@ -1,7 +1,7 @@
 import React from 'react';
 import { Typography, Paper } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import profileImage from './components/pics/profile.png';
+import profileImage from './pics/profile.png';
 
 //Custom CSS using makestyles//
 const useStyles = makeStyles(() => ({

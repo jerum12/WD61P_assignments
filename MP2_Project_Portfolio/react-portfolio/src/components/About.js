@@ -2,11 +2,11 @@ import React from 'react';
 import { Typography, Paper, Grid, Box } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import Rating from '@mui/material/Rating';
-import HtmlLogo from './components/pics/HTML5.png';
-import CssLogo from './components/pics/CSS3.png';
-import JsLogo from './components/pics/JS.png';
-import ReactLogo from './components/pics/React.png';
-import PhotoshopLogo from './components/pics/PS.png';
+import HtmlLogo from './pics/HTML5.png';
+import CssLogo from './pics/CSS3.png';
+import JsLogo from './pics/JS.png';
+import ReactLogo from './pics/React.png';
+import PhotoshopLogo from './pics/PS.png';
 
 //makeStyles Custom CSS//
 const useStyles = makeStyles(() => ({

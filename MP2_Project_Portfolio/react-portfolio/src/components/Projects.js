@@ -1,9 +1,9 @@
 import React from 'react';
 import { Typography, Grid, Card, CardActionArea, CardContent, CardMedia } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import Project1 from './components/pics/proj1.jpg';
-import Project2 from './components/pics/proj2.jpg';
-import Project3 from './components/pics/proj3.jpg';
+import Project1 from './pics/proj1.jpg';
+import Project2 from './pics/proj2.jpg';
+import Project3 from './pics/proj3.jpg';
 
 
 //Custom CSS using makeStyles//

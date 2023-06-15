@@ -1,20 +1,21 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './Navbar.js';
-import Home from './Home.js';
-import About from './About';
-import Projects from './Projects';
-import Contact from './Contact';
-import Footer from './Footer';
-import './styles.css';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 
-const App = () => {
+const linksArray = ['Home', 'About', 'Projects', 'Contact'];
+
+function App() {
   return (
     <BrowserRouter>
-      <div className="app-container">
-        <Navbar />
+      <div>
+        <Navbar links={linksArray} />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route exact path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
@@ -23,6 +24,6 @@ const App = () => {
       </div>
     </BrowserRouter>
   );
-};
+}
 
 export default App;
