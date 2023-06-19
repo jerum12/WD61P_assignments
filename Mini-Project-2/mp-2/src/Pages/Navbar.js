@@ -3,11 +3,27 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import {Link} from 'react-router-dom';
 import petshopPic from '../images/petshop.png';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faShoppingCart} from '@fortawesome/free-solid-svg-icons';
+import {useState} from "react";
+
 
 function CustomNavbar() {
+
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleHover = () => {
+        setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
+
+    const iconColor = isHovered ? '#808080' : '#000';
+
     return (
         <div>
             <Navbar collapseOnSelect expand="lg" bg={{backgroundColor: '#fbf4e2'}} variant="light" id="navbar-container"
@@ -46,15 +62,15 @@ function CustomNavbar() {
                                       style={{margin: "3%", fontWeight: "bold"}}>Contact</Nav.Link>
                         </Nav>
                         <Nav>
-                            <Form className="d-flex">
-                                <Form.Control
-                                    type="search"
-                                    placeholder="Search"
-                                    className="me-2"
-                                    aria-label="Search"
-                                />
-                                <Button variant="outline-success">Search</Button>
-                            </Form>
+                            <div className="d-flex align-items-center">
+                                <Link to="/shoppingcart" className="me-2" onMouseEnter={handleHover}
+                                      onMouseLeave={handleMouseLeave}>
+                                    <FontAwesomeIcon icon={faShoppingCart} style={{color: iconColor}}/>
+                                </Link>
+                                <Link to="/login">
+                                    <Button variant="outline-success">Login</Button>
+                                </Link>
+                            </div>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
