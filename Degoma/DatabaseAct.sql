@@ -81,3 +81,31 @@ on a.customer_id = b.customer_id
 group by a.customer_id 
 
 -- 8.Retrieve the top 5 customers who have made the highest total purchases.
+SELECT a.customer_first_name,
+max(c.price)
+FROM my_database_activity.customer_tbl a
+LEFT JOIN my_database_activity.order_tbl b
+ON a.customer_id = b.customer_id
+LEFT JOIN my_database_activity.order_item_tbl c
+ON b.order_id = c.order_id
+GROUP BY a.customer_id
+ORDER BY max(c.price) desc
+
+-- 9.Delete the customer_id = 2.
+delete from my_database_activity.customer_tbl where customer_id = 2
+
+-- 10.Retrieve all records for all tables in one result set. (atleast 3 columns)
+SELECT a.*,
+b.order_id,
+b.order_date,
+c.order_item_id,
+c.product_name,
+c.quantity,
+c.price 
+FROM my_database_activity.customer_tbl a
+LEFT JOIN my_database_activity.order_tbl b
+ON a.customer_id = b.customer_id
+LEFT JOIN my_database_activity.order_item_tbl c
+ON b.order_id = c.order_id
+
+
