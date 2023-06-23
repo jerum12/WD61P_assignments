@@ -9,29 +9,57 @@ body{
     font-family: 'Oswald', sans-serif;
     font-size: 100%;
     margin-top: 200px;
+    margin-left:  auto;
+    margin-right:  auto;
+    margin-bottom:  auto;
   }
 .title{
     color: rgb(6, 6, 6);
     font-size: 250%;
-    padding:5px 5px;
-  } 
-
+     } 
+  svg {
+    
+    font-family: 'Russo One', sans-serif;
+    
+    width: 100%; height: 70%;   
+  }
+  svg text {
+    text-transform: uppercase;
+    animation: stroke 5s infinite alternate;
+    stroke-width: 2;
+    stroke: #000000;
+    font-size: 650%;
+  }
+  @keyframes stroke {
+    0%   {
+      fill: rgba(72,138,20,0); stroke: rgb(0, 0, 0);
+      stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+    }
+    70%  {fill: rgba(72,138,20,0); stroke: rgb(0, 0, 0); }
+    80%  {fill: rgba(72,138,20,0); stroke: rgb(0, 0, 0); stroke-width: 3; }
+    100% {
+      fill: rgb(0, 0, 0); stroke: rgba(0, 0, 0, 0); 
+      stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+    }
+  }
 .home{
     display: grid;
     grid-template-columns: 50% 50% ;
     grid-gap: 20px;
 }
+
+
 .home-menu
  {
     background-color: rgb(253, 253, 247);
     opacity: 0.8;
     overflow: hidden;
-    position: fixed;
+    position: absolute;
     top: 0; 
-    width: 99%; 
+    width: 100%; 
     text-align:center;
     height: 25%;
-    border-radius: 5px;
+   margin: 0 auto;
 }
 .menu{
     color:#030000;
@@ -59,7 +87,7 @@ body{
 }
 
 .PackageIntro>img {
-    width: 97%;
+    width: 100%;
     border-radius: 5px;
     height: auto;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -71,9 +99,9 @@ body{
     display: grid;
     grid-template-columns: 2fr 1fr;
     
-    width: 97%;
+    width: 100%;
  
-    padding: 20px;
+    
     background-color: rgba(100, 98, 98, 0.288);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -110,7 +138,7 @@ body{
 
 .Rate {
     float: left;
-    color: #555;
+    color: #000000;
     font-weight: bold;
     position: relative;
     z-index: 1;
@@ -120,7 +148,7 @@ body{
 
 .Price {
     float: right;
-    color: #555;
+    color: #df0000;
     font-weight: bold;
     position: relative;
     background-color: transparent;
@@ -130,7 +158,7 @@ body{
 .Description {
     clear: both;
     display: block;
-    color: #999;
+    color: #515151;
     font-style: italic;
     font-size: 14px;
     padding-top: 10px;
@@ -138,7 +166,7 @@ body{
     top: -8px;
 }
 .abt-img{
-    max-width:100%;height:auto;
+    max-width:100%;height:80%;
     width: 80%;
     border-radius: 8px;
     display: block;
@@ -166,7 +194,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 20px;
-    width: 97%;
+    width: 100%;
     padding: 20px;
     background-color: rgba(100, 98, 98, 0.288);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
@@ -176,7 +204,7 @@ body{
     display: flex;
     flex-direction: column;
     grid-gap: 20px;
-    width: 97%;
+    width: 100%;
     padding: 20px;
     padding-top: 10%;
     padding-bottom: 9%;
@@ -187,7 +215,7 @@ body{
     border-radius: 5px;
 }
 .contactdiv {
-    text-align: center;
+    
     padding: 5%;
     background-color: rgba(255, 255, 255, 0.837);
     border-radius: 5px;
@@ -201,9 +229,9 @@ body{
 .about {
     display: flex;
     
-    width: 97%;
+    width: 100%;
  
-    padding: 20px;
+     
     background-color: rgba(100, 98, 98, 0.288);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -220,7 +248,7 @@ body{
     margin-left: 30%;
     margin-right: 30%;
     border-radius: 5px;
-    padding: 20px;
+    
     background-color: rgba(100, 98, 98, 0.288);
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
@@ -235,7 +263,7 @@ body{
     .homeintro {
         margin-left: 0%;
         margin-right: 0%;
-        width: 90%;
+        width: 100%;
     }
     
     
@@ -257,3 +285,31 @@ body{
     margin-right: 0%;
 }
 }
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Roboto+Slab&display=swap');
+
+
+
+.container {
+  margin: 50px;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+  font-family: 'Merriweather', sans-serif;
+}
+
+#sm-footer {
+  position: bottom                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm                                                                    mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm  ; 
+  bottom: 0; 
+  background-color: black; 
+  width: 100%; 
+  height: 7vh; 
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 2rem; 
+  font-family: 'Roboto Slab', sans-serif; 
+}
+
+.foot, .foot:visited {
+  color: white; 
+  text-decoration: none;
+  padding: 10px; 
+}
+

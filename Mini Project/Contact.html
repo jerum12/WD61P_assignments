@@ -9,8 +9,14 @@
     <script src="https://kit.fontawesome.com/bfc4c80f8b.js" crossorigin="anonymous"></script>
 </head>
 <body>  
-    <header class="home-menu">   
-    <h1 class="title">Arellano Music Studio</h1>
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+     
+   <header class="home-menu">   
+       <svg viewBox="0 0 1320 300">
+           <text x="50%" y="20%" dy=".35em" text-anchor="middle">
+             Arellano Music Studio
+           </text>
+       </svg> 
     <nav>
 		<a href="/Mini Project/Home.html" class="menu">Home</a>
 		<a href="/Mini Project/About.html" class="menu">About</a>
@@ -33,7 +39,71 @@
         <i class="fa-solid fa-phone fa-lg" id="icon"></i>
         <span >(+63) 926 737 2307</span></a>
     </div>
+    <div class="contactdiv">
+    <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8">
+        <fieldset>
+          <legend>For person</legend>
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+          <div class="two-cols">
+            <label>
+              Email address
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              Phone number
+              <input type="tel" name="phone">
+            </label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Appointment request</legend>
+          <div class="two-cols">
+            <label>
+              Date
+              <input type="date" name="Appointment request" required>
+            </label>
+            <div class="inline">
+              <label>
+                <input type="hidden" name="Morning desired" value="no">
+                <input type="checkbox" name="Morning desired" value="yes">
+                Morning
+              </label>
+              <label>
+                <input type="hidden" name="Afternoon desired" value="no">
+                <input type="checkbox" name="Afternoon desired" value="yes">
+                Afternoon
+              </label>
+            </div>
+          </div>
+          <p>Confirmation requested by</p>
+          <div class="inline">
+            <label>
+              <input type="radio" name="Confirmation requested by" value="email" checked>
+              Email
+            </label>
+            <label>
+              <input type="radio" name="Confirmation requested by" value="phone">
+              Phone call
+            </label>
+          </div>
+        </fieldset>
+        <div class="btns">
+          <input type="text" name="_gotcha" value="" style="display:none;">
+          <input type="submit" value="Submit request">
+        </div>
+      </form>
+    </div>
 </div> 
+
+
     
 </body>
+<footer id="sm-footer">
+    <a href="https://www.facebook.com" class="foot"><i class="fab fa-facebook"></i></a>
+       <a href="https://www.instagram.com"class="foot"><i class="fab fa-instagram"></i></a>
+ <a href="https://youtube.com"class="foot"><i class="fab fa-youtube"></i></a>
+</footer>
 </html>
