@@ -14,4 +14,4 @@ function Fishes() {
     )
 }
 
-export default Fishes
+export default Fishes;

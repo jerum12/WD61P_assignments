@@ -2,7 +2,9 @@ import React from 'react';
 
 function Signup(props) {
     return (
-        <div></div>
+        <div style={{padding: "5%"}}>
+
+        </div>
     );
 }
 
