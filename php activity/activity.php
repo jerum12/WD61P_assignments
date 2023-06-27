@@ -17,6 +17,12 @@ abstract class Activity implements ActivityInterface
         $this->duration = $duration;
     }
     //create setter and getter methods
+    function setName ($name){
+        $this->name = $name;
+    }
+    function setDuration($duration){
+        $this->duration = $duration;
+    }
     function get_name(){
         return $this->name;
     }
@@ -37,6 +43,9 @@ class SportsActivity extends Activity
     $this->equipment = $equipment;
 }
    //create setter and getter methods
+   function setEquipment($equipment){
+    $this->equipment = $equipment;
+   }
    function get_equipment(){
     return $this->equipment;
    }
@@ -57,6 +66,9 @@ class AcademicActivity extends Activity
         $this->subject = $subject;
     }
        //create setter and getter methods
+       function setSubject($subject){
+        $this->subject = $subject;
+       }
        function get_subject(){
         return $this->subject;
        }
@@ -68,19 +80,15 @@ class AcademicActivity extends Activity
 }
 
 // Create instances of activity classes
-if($activities instanceof AcademicActivity) {
-    echo "The object is AcademicActivity";
-  }
-if($activities instanceof SportsActivity) {
-    echo "The object is SportsActivity";
-  }
+$sportsActivity = new SportsActivity ('Barbell');
+$academicActivity = new AcademicActivity ('Math');
 
 // Store created object activities in an array
 $activities = [$sportsActivity, $academicActivity];
 
 // Display details of all activities using foreach
 foreach ($activities as $activity) {
- 
+ $activity->displayDetails();
 }
 
 ?>
