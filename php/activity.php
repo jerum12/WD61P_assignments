@@ -90,13 +90,13 @@ class AcademicActivity extends Activity
 }
 
 // Create instances of activity classes
-$sportsActivity = new sportsActivity('Basket Bal');
+$sportsActivity = new sportsActivity('Basket Ball');
 //$sportsActivity->setEquipment('Basket Ball');
-$equipment = $sportsActivity->get_equipment();
+//$equipment = $sportsActivity->get_equipment();
 
 $academicActivity = new academicActivity('Physical Education');
 //$academicActivity->setSubject('Physical Education');
-$subject = $academicActivity->get_subject();
+//$subject = $academicActivity->get_subject();
 
 
 // Store created object activities in an array
