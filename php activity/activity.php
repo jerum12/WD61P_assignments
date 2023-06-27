@@ -52,7 +52,9 @@ class SportsActivity extends Activity
    //show details name, duration and equipment
    public function displayDetails()
    {
-    return "$this->name,$this->duration,$this->equipment";
+    echo "$this->name";
+    echo "$this->duration";
+    echo "$this->equipment";
    }
 }
 
@@ -75,7 +77,9 @@ class AcademicActivity extends Activity
     //show details name, duration and subject
     public function displayDetails()
    {
-    return "$this->name,$this->duration,$this->subject";
+    echo "$this->name";
+    echo "$this->duration";
+    echo "$this->subject";
    }
 }
 
