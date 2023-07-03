@@ -42,8 +42,10 @@ class SportsActivity extends Activity
 {
     private $equipment;
 
-    public function __construct($equipment)
+    public function __construct($name, $duration, $equipment)
     {
+        $this->name = $name;
+        $this->duration = $duration;   
         $this->equipment = $equipment;
     }
     
@@ -72,8 +74,10 @@ class AcademicActivity extends Activity
 {
     private $subject;
 
-    public function __construct($subject)
+    public function __construct($name, $duration, $subject)
     {
+        $this->name = $name;
+        $this->duration = $duration;
         $this->subject = $subject;
     }
 
@@ -119,7 +123,7 @@ $english->setSubject('English Subject');
 
 // // Store created object activities in an array
 
-$activities = [$SportsActivity, $AcademicActivity];
+$activities = [$basketball, $volleyball, $math, $english];
 
 // // Display details of all activities using foreach
 foreach ($activities as $activity) {
