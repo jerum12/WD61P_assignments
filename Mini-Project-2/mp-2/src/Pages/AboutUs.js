@@ -6,20 +6,20 @@ import CardGroup from 'react-bootstrap/CardGroup';
 import PetshopPH from '../images/petshopph.jpg';
 
 function AboutUs() {
-    const currentDate = new Date().toLocaleString('en-PH', {timeZone: 'Asia/Manila'});
+    const currentDate = new Date().toLocaleString('en-PH', { timeZone: 'Asia/Manila' });
 
     // Extract the current day of the week and hour
     const currentDayOfWeek = new Date(currentDate).getDay();
     const currentHour = new Date(currentDate).getHours();
 
     const openingHours = [
-        {dayOfWeek: 0, openingHour: 11, closingHour: 21}, // Sunday
-        {dayOfWeek: 1, openingHour: 11, closingHour: 21}, // Monday
-        {dayOfWeek: 2, openingHour: 11, closingHour: 21}, // Tuesday
-        {dayOfWeek: 3, openingHour: 11, closingHour: 21}, // Wednesday
-        {dayOfWeek: 4, openingHour: 11, closingHour: 21}, // Thursday
-        {dayOfWeek: 5, openingHour: 11, closingHour: 21}, // Friday
-        {dayOfWeek: 6, openingHour: 11, closingHour: 21}, // Saturday
+        { dayOfWeek: 0, openingHour: 11, closingHour: 21 }, // Sunday
+        { dayOfWeek: 1, openingHour: 11, closingHour: 21 }, // Monday
+        { dayOfWeek: 2, openingHour: 11, closingHour: 21 }, // Tuesday
+        { dayOfWeek: 3, openingHour: 11, closingHour: 21 }, // Wednesday
+        { dayOfWeek: 4, openingHour: 11, closingHour: 21 }, // Thursday
+        { dayOfWeek: 5, openingHour: 11, closingHour: 21 }, // Friday
+        { dayOfWeek: 6, openingHour: 11, closingHour: 21 }, // Saturday
     ];
 
     // Find the opening hours for the current day of the week
@@ -35,14 +35,13 @@ function AboutUs() {
 
     return (
         <div>
-            <CustomNavbar/>
-
-            <div className="container text-start" style={{padding: "5% 0"}}>
+            <CustomNavbar />
+            <div className="container text-start" style={{ padding: "5% 0" }}>
                 <div>
                     <b>About Us:</b>
                 </div>
-                <br/>
-                <div style={{padding: "0 3%"}}>
+                <br />
+                <div style={{ padding: "0 3%" }}>
                     <div>
                         <p>Started by pet lovers, for pet lovers!</p>
                     </div>
@@ -51,7 +50,7 @@ function AboutUs() {
                             Pet Shop PH is all about convenience, we’re here to deliver the best possible service and
                             convenience to all the pet parents out there through:
                         </p>
-                        <ul style={{listStyleType: 'square'}}>
+                        <ul style={{ listStyleType: 'square' }}>
                             <li>Huge payment options: COD, Paypal, Credit Cards and more</li>
                             <li>Fast and Free delivery: Right to your door!</li>
                             <li>24/7 shopping: No need to rush out of work</li>
@@ -74,24 +73,24 @@ function AboutUs() {
                 </div>
                 <div>
                     <div>
-                        <CardGroup style={{paddingTop: "4%"}}>
-                            <Card style={{borderRadius: "0"}} className="border-0 bg-transparent">
+                        <CardGroup style={{ paddingTop: "4%" }}>
+                            <Card style={{ borderRadius: "0" }} className="border-0 bg-transparent">
                                 <Card.Img variant="top" src={PetshopPH} fluid={"true"}
-                                          style={{borderTopLeftRadius: "0", borderTopRightRadius: "0"}}/>
+                                    style={{ borderTopLeftRadius: "0", borderTopRightRadius: "0" }} />
                             </Card>
-                            <Card style={{borderRadius: '0'}} className="border-0 bg-transparent">
+                            <Card style={{ borderRadius: '0' }} className="border-0 bg-transparent">
                                 <Card.Body>
                                     <h3 className="text-center">Visit Our Super Store</h3>
-                                    <Card.Text style={{padding: '2% 5%'}}>
+                                    <Card.Text style={{ padding: '2% 5%' }}>
                                         1686 Nicolas Zamora St
-                                        <br/>
+                                        <br />
                                         Tondo Manila, City
-                                        <br/>
+                                        <br />
                                         Open Everyday: 11:00AM - 9:00PM
-                                        <br/>
-                                        <span style={{color: isStoreOpen ? 'green' : 'red'}}>
-            {isStoreOpen ? 'Open' : 'Closed'}
-          </span>
+                                        <br />
+                                        <span style={{ color: isStoreOpen ? 'green' : 'red' }}>
+                                            {isStoreOpen ? 'Open' : 'Closed'}
+                                        </span>
                                     </Card.Text>
                                 </Card.Body>
                             </Card>
@@ -100,7 +99,7 @@ function AboutUs() {
                 </div>
             </div>
 
-            <Footer/>
+            <Footer />
         </div>
     )
 }

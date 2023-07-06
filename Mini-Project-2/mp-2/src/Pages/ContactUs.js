@@ -7,14 +7,14 @@ function ContactUs() {
     return (
         <div>
 
-            <CustomNavbar/>
+            <CustomNavbar />
 
-            <div className="container text-start" style={{paddingTop: "5%", paddingBottom: "5%"}}>
+            <div className="container text-start" style={{ paddingTop: "5%", paddingBottom: "5%" }}>
                 <div>
                     <b>Contact Us</b>
                 </div>
 
-                <br/>
+                <br />
                 <div>
                     <p>We'd love to here from you!</p>
                     <p><a style={{
@@ -22,6 +22,12 @@ function ContactUs() {
                         color: "#0e4d92",
                         fontSize: "13px"
                     }} href="mailto:petwarehouseph@gmail.com"> petwarehouseph@gmail.com</a>
+                    </p>
+                    <p><a style={{
+                        textDecoration: "none",
+                        color: "#0e4d92",
+                        fontSize: "13px"
+                    }} href="mailto:petwarehouseph@gmail.com"> petshopph@gmail.com</a>
                     </p>
                     <p>
                         (0912) 345-6789
@@ -32,7 +38,7 @@ function ContactUs() {
                 </div>
             </div>
 
-            <Footer/>
+            <Footer />
 
         </div>
 

@@ -1,11 +1,10 @@
 import React from 'react'
 
-function AllProducts() {
+function Forgotpw() {
     return (
         <div>
-
         </div>
     )
 }
 
-export default AllProducts
+export default Forgotpw

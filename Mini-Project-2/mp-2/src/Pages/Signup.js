@@ -1,11 +1,18 @@
-import React from 'react';
+import React from 'react'
+import { Form } from 'react-router-dom'
+import CustomNavbar from './Navbar'
+import Footer from './Footer'
 
-function Signup(props) {
+function Signup() {
     return (
-        <div style={{padding: "5%"}}>
+        <div>
+            <CustomNavbar />
+            <Form>
 
+            </Form>
+            <Footer />
         </div>
-    );
+    )
 }
 
-export default Signup;
+export default Signup
