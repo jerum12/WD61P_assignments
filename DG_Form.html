@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<!-- body of the form -->
+	<form>
+		<fieldset class="form-group">
+			<legend>Form</legend>
+			<label for="username">Username</label>
+			<input type="text" class="form-control" id="username" placeholder="Enter your username" required>
+			<br>
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="Password" placeholder="Enter your password" required>
+			<br>
+			<article class="Gender">
+            <label for="availability">Gender:</label>
+				<input type="radio" id="Male" name="Gender" value="male" checked>
+				<label for="Male">Male</label>
+				<input type="radio" id="Female" name="Gender" value="female">
+				<label for="Female">Female</label>
+				<input type="radio" id="Other" name="Gender" value="other">
+				<label for="Other">Other</label>
+			</article>
+		
+		<br>
+		<Article class="availability">
+			<label for="availability">Availability:</label>
+			<br>
+				<input type="checkbox" id="Monday" name="Monday" value="Monday" checked>
+				<label for="Monday">Monday</label>
+				<br>
+				<input type="checkbox" id="Tuesday" name="Tuesday" value="Tuesday">
+				<label for="Tuesday">Tuesday</label>
+				<br>
+				<input type="checkbox" id="Wednesday" name="Wednesday" value="Wednesday">
+				<label for="Wednesday">Wednesday</label>
+				<br>
+				<input type="checkbox" id="Thursday" name="Thursday" value="Thursday">
+				<label for="Thursday">Thursday</label>
+				<br>
+				<input type="checkbox" id="Friday" name="Friday" value="Friday">
+				<label for="Friday">Friday</label>
+				<br>
+				<input type="checkbox" id="Saturday" name="Saturday" value="Saturday">
+				<label for="Saturday">Saturday</label>
+				<br>
+				<input type="checkbox" id="Sunday" name="Sunday" value="Sunday">
+				<label for="Sunday">Sunday</label>
+				<br>
+				<button type="submit">Submit</button>
+		</Article>
+    </fieldset>
+	</form>
+</body>
+</html>
