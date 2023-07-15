@@ -4,7 +4,7 @@ const Packages = () => {
 	return (
 		<div class="package">   
     <div class="PackageIntro">     
-        <img src={require('C:/Users/Sephina/OneDrive/Documents/GitHub/WD61P_assignments/react-mp2/src/image/studio.jpg')} / >
+        <img src={require('../image/studio.jpg')} / >
     </div>
     <div id="packagemenu">
         <h2>Rates</h2>

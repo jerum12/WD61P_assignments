@@ -4,7 +4,7 @@ const Home = () => {
 	return (
         <><div class="homeintro">
         <div>
-            <img src={require('C:/Users/Sephina/OneDrive/Documents/GitHub/WD61P_assignments/react-mp2/src/image/les1.jpg')} class="home-img"/ >
+            <img src={require('../image/les1.jpg')} class="home-img"/ >
         </div>
         <div class="hometxt">
         <p class="title">Music for Everyone</p>    
@@ -17,7 +17,7 @@ const Home = () => {
            </p>
         </div>
         <div>
-            <img src={require('C:/Users/Sephina/OneDrive/Documents/GitHub/WD61P_assignments/react-mp2/src/image/les3.jpg')}  class="home-img"/ >
+            <img src={require('../image/les3.jpg')}  class="home-img"/ >
         </div>
     </div>
     </> 
